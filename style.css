@@ -184,7 +184,7 @@ body {
 .lcode2 {
   top: 80%;
   left: 10%;
-  transform: rotate(80de  g);
+  transform: rotate(80de g);
 }
 .fcode1 {
   top: 20%;
@@ -193,7 +193,7 @@ body {
 }
 .fcode2 {
   top: 45%;
-  left:80%;
+  left: 80%;
   transform: rotate(40deg);
 }
 .css1 {
@@ -323,7 +323,7 @@ body {
   text-align: center;
   color: white;
 }
-.contact h2{
+.contact h2 {
   z-index: 2;
   position: relative;
 }
@@ -1173,12 +1173,12 @@ footer p {
     margin-bottom: -150px;
   }
   .header:hover {
-  margin-left: 15px;
-  width: 23%;
-  transition: 0.3s;
-  box-shadow: 0 0 10px rgb(255, 255, 255);
-}
-  .content{
+    margin-left: 15px;
+    width: 23%;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+  }
+  .content {
     margin-top: 70px;
     width: 100%;
   }
@@ -1190,9 +1190,9 @@ footer p {
     margin-top: 15px;
   }
   .nav a:hover {
-  font-size: 9px;
-  transition: 0.7s;
-}
+    font-size: 9px;
+    transition: 0.7s;
+  }
   .img {
     width: 150px;
     height: 150px;
@@ -1271,135 +1271,140 @@ footer p {
   #htmlbarin {
     width: 90%;
   }
-  #cssbarin{
+  #cssbarin {
     width: 80%;
   }
-  #jsbarin{
+  #jsbarin {
     width: 35%;
   }
-  #nodebarin{
+  #nodebarin {
     width: 15%;
   }
-  .project{
+  .project {
     width: 100%;
   }
-  #kht{
+  #kht {
     margin-top: 15px;
     width: 97%;
     height: 210px;
     margin-left: 5px;
   }
-  #kht #baglanti{
+  #kht #baglanti {
     font-size: 15px;
     margin-top: 5px;
     margin-left: 270px;
   }
-  #kht i{
+  #kht i {
     font-size: 50px;
     margin-left: 10px;
     margin-top: 65px;
   }
-  #kht h1{
+  #kht h1 {
     font-size: 18px;
     margin-top: 20px;
     margin-left: 50px;
   }
-  #kht p{
+  #kht p {
     font-size: 13px;
     margin-top: 70px;
     margin-left: 60px;
   }
   #kht:hover {
-  width: 98%;
-  height: 215px;
-  margin-left: 5px;
-  margin-top: 70px;
-}
-#kht:hover h1 {
-  transition: 0.6s;
-  font-size: 35px;
-  margin-left: 0px;
-}
-#kht:hover p {
-  transition: 0.6s;
-  font-size: 21px;
-  margin-top: 290px;
-}
-#kht:hover i {
-  transition: 0.6s;
-  font-size: 170px;
-  margin-left: 130px;
-}
-  #qp{
+    width: 98%;
+    height: 215px;
+    margin-left: 5px;
+    margin-top: 70px;
+  }
+  #kht:hover h1 {
+    transition: 0.6s;
+    font-size: 35px;
+    margin-left: 0px;
+  }
+  #kht:hover p {
+    transition: 0.6s;
+    font-size: 21px;
+    margin-top: 290px;
+  }
+  #kht:hover i {
+    transition: 0.6s;
+    font-size: 170px;
+    margin-left: 130px;
+  }
+  #qp {
     margin-top: 235px;
     width: 97%;
     height: 210px;
     margin-left: 5px;
   }
-  #qp #baglanti2{
+  #qp #baglanti2 {
     font-size: 15px;
     margin-top: 5px;
     margin-left: 270px;
   }
-  #qp i{
+  #qp i {
     font-size: 50px;
     margin-left: 10px;
     margin-top: 75px;
   }
-  #qp h1{
+  #qp h1 {
     font-size: 18px;
     margin-top: 20px;
     margin-left: 150px;
   }
-  #qp p{
+  #qp p {
     font-size: 13px;
     margin-top: 50px;
     margin-left: 60px;
   }
-  #ttp{
+  #ttp {
     margin-top: 455px;
     width: 97%;
     height: 210px;
     margin-left: 5px;
   }
-  #ttp #baglanti3{
+  #ttp #baglanti3 {
     font-size: 15px;
     margin-top: 5px;
     margin-left: 270;
   }
-  #ttp i{
+  #ttp i {
     font-size: 50px;
     margin-left: 10px;
     margin-top: 75px;
   }
-  #ttp h1{
+  #ttp h1 {
     font-size: 18px;
     margin-top: 20px;
     margin-left: 150px;
   }
-  #ttp p{
+  #ttp p {
     font-size: 13px;
     margin-top: 50px;
     margin-left: 60px;
   }
-  #contactbox{
+  #contactbox {
     width: 100%;
     height: 620px;
     margin-left: 0px;
   }
-  #adsoyad,#mail,#mesaj,#file,#gonder,#reset{
+  #adsoyad,
+  #mail,
+  #mesaj,
+  #file,
+  #gonder,
+  #reset {
     margin-top: 30px;
     margin-left: 20px;
     width: 80%;
   }
-  .bgicons{
+  .bgicons {
     font-size: 45px;
   }
-  .bgicons2{
+  .bgicons2 {
     font-size: 45px;
   }
 }
-@media (min-width: 320px) and (max-width: 480px){
+@media (min-width: 320px) and (max-width: 480px) {
   .header {
     position: fixed;
     width: 90%;
@@ -1408,10 +1413,10 @@ footer p {
     margin-bottom: -150px;
   }
   .header:hover {
-  margin-left: 15px;
-  width: 77%;
-}
-  .content{
+    margin-left: 15px;
+    width: 77%;
+  }
+  .content {
     margin-left: 0px;
     margin-top: 70px;
     width: 100%;
@@ -1424,9 +1429,9 @@ footer p {
     margin-top: 15px;
   }
   .nav a:hover {
-  font-size: 43%;
-  transition: 0.7s;
-}
+    font-size: 43%;
+    transition: 0.7s;
+  }
   .img {
     width: 200px;
     height: 200px;
@@ -1457,9 +1462,9 @@ footer p {
     height: 30px;
     padding-top: 3px;
     margin-left: 15%;
-    margin-top:  160%;
+    margin-top: 160%;
   }
-  #insta:hover{
+  #insta:hover {
     margin-top: 158%;
   }
   #lnkd {
@@ -1470,7 +1475,7 @@ footer p {
     margin-left: 27%;
     margin-top: 160%;
   }
-   #lnkd:hover{
+  #lnkd:hover {
     margin-top: 158%;
   }
   #github {
@@ -1481,7 +1486,7 @@ footer p {
     margin-left: 39%;
     margin-top: 160%;
   }
-   #github:hover{
+  #github:hover {
     margin-top: 158%;
   }
   #cv {
@@ -1493,10 +1498,10 @@ footer p {
     margin-left: 51%;
     margin-top: 160%;
   }
-   #cv:hover{
+  #cv:hover {
     margin-top: 158%;
   }
-  .skills{
+  .skills {
     width: 100%;
   }
   #skillbar {
@@ -1521,185 +1526,190 @@ footer p {
   #htmlbarin {
     width: 90%;
   }
-  #cssbarin{
+  #cssbarin {
     width: 80%;
   }
-  #jsbarin{
+  #jsbarin {
     width: 35%;
   }
-  #nodebarin{
+  #nodebarin {
     width: 15%;
   }
-  .project{
+  .project {
     width: 100%;
   }
-  #kht{
+  #kht {
     margin-top: 15px;
     width: 97%;
     height: 29%;
     margin-left: 5px;
   }
-  #kht:hover{
+  #kht:hover {
     margin-top: 15px;
     width: 98%;
     height: 30%;
     margin-left: 5px;
   }
-  #kht #baglanti{
+  #kht #baglanti {
     font-size: 15px;
     margin-top: 5px;
     margin-left: 95%;
   }
-  #kht i{
+  #kht i {
     font-size: 50px;
     margin-left: 10px;
     margin-top: 20%;
   }
-  #kht:hover i{
+  #kht:hover i {
     font-size: 52px;
     margin-left: 10px;
     margin-top: 20%;
   }
-  #kht h1{
+  #kht h1 {
     font-size: 18px;
     margin-top: 20px;
     margin-left: 20%;
   }
-  #kht:hover h1{
+  #kht:hover h1 {
     font-size: 20px;
     margin-top: 20px;
     margin-left: 20%;
   }
-  #kht p{
+  #kht p {
     font-size: 13px;
     margin-top: 70px;
     margin-left: 60px;
   }
-  #kht:hover p{
+  #kht:hover p {
     font-size: 14px;
     margin-top: 70px;
     margin-left: 60px;
   }
-  #qp{
+  #qp {
     margin-top: 235px;
     width: 97%;
     height: 29%;
     margin-left: 5px;
   }
-    #qp:hover{
+  #qp:hover {
     margin-top: 235px;
     width: 98%;
     height: 30%;
     margin-left: 5px;
   }
-  #qp #baglanti2{
+  #qp #baglanti2 {
     font-size: 15px;
     margin-top: 5px;
     margin-left: 95%;
   }
-  #qp i{
+  #qp i {
     font-size: 50px;
     margin-left: 10px;
     margin-top: 20%;
   }
-  #qp:hover i{
+  #qp:hover i {
     font-size: 52px;
     margin-left: 10px;
     margin-top: 20%;
   }
-  #qp h1{
+  #qp h1 {
     font-size: 18px;
     margin-top: 20px;
     margin-left: 50%;
   }
-  #qp:hover h1{
+  #qp:hover h1 {
     font-size: 20px;
     margin-top: 20px;
     margin-left: 50%;
   }
-  #qp p{
+  #qp p {
     font-size: 13px;
     margin-top: 50px;
     margin-left: 60px;
   }
-  #qp:hover p{
+  #qp:hover p {
     font-size: 14px;
     margin-top: 50px;
     margin-left: 60px;
   }
-  #ttp{
+  #ttp {
     margin-top: 455px;
     width: 97%;
     height: 29%;
     margin-left: 5px;
   }
-    #ttp:hover{
+  #ttp:hover {
     margin-top: 455px;
     width: 98%;
     height: 30%;
     margin-left: 5px;
   }
-  #ttp #baglanti3{
+  #ttp #baglanti3 {
     font-size: 15px;
     margin-top: 5px;
     margin-left: 95%;
   }
-  #ttp i{
+  #ttp i {
     font-size: 50px;
     margin-left: 10px;
     margin-top: 20%;
   }
-  #ttp:hover i{
+  #ttp:hover i {
     font-size: 52px;
     margin-left: 10px;
     margin-top: 20%;
   }
-  #ttp h1{
+  #ttp h1 {
     font-size: 18px;
     margin-top: 20px;
     margin-left: 50%;
   }
-  #ttp:hover h1{
+  #ttp:hover h1 {
     font-size: 20px;
     margin-top: 20px;
     margin-left: 50%;
   }
-  #ttp p{
+  #ttp p {
     font-size: 13px;
     margin-top: 50px;
     margin-left: 60px;
   }
-  #ttp:hover p{
+  #ttp:hover p {
     font-size: 14px;
     margin-top: 50px;
     margin-left: 60px;
   }
-  .contact{
+  .contact {
     width: 100%;
   }
-  #contactbox{
+  #contactbox {
     width: 100%;
     height: 620px;
     margin-left: 0px;
   }
-  #adsoyad,#mail,#mesaj,#file,#gonder,#reset{
+  #adsoyad,
+  #mail,
+  #mesaj,
+  #file,
+  #gonder,
+  #reset {
     margin-top: 30px;
     margin-left: 7%;
     width: 95%;
   }
-  footer{
+  footer {
     width: 100%;
     margin-left: 0px;
   }
-  .bgicons{
+  .bgicons {
     font-size: 45px;
   }
-  .bgicons2{
+  .bgicons2 {
     font-size: 45px;
   }
 } /*bitmedi*/
 @media only screen and (min-width: 480px) and (max-width: 768px) {
-    .header {
+  .header {
     position: fixed;
     width: 90%;
     margin-left: 20px;
@@ -1707,10 +1717,10 @@ footer p {
     margin-bottom: -150px;
   }
   .header:hover {
-  margin-left: 15px;
-  width: 92%;
-}
-  .content{
+    margin-left: 15px;
+    width: 92%;
+  }
+  .content {
     margin-left: 0px;
     margin-top: 70px;
     width: 100%;
@@ -1723,9 +1733,9 @@ footer p {
     margin-top: 15px;
   }
   .nav a:hover {
-  font-size: 73%;
-  transition: 0.7s;
-}
+    font-size: 73%;
+    transition: 0.7s;
+  }
   .img {
     width: 200px;
     height: 200px;
@@ -1755,9 +1765,9 @@ footer p {
     height: 30px;
     padding-top: 3px;
     margin-left: 20%;
-    margin-top:  120%;
+    margin-top: 120%;
   }
-  #insta:hover{
+  #insta:hover {
     margin-top: 118%;
   }
   #lnkd {
@@ -1768,7 +1778,7 @@ footer p {
     margin-left: 30%;
     margin-top: 120%;
   }
-   #lnkd:hover{
+  #lnkd:hover {
     margin-top: 118%;
   }
   #github {
@@ -1779,7 +1789,7 @@ footer p {
     margin-left: 40%;
     margin-top: 120%;
   }
-   #github:hover{
+  #github:hover {
     margin-top: 118%;
   }
   #cv {
@@ -1791,10 +1801,10 @@ footer p {
     margin-left: 50%;
     margin-top: 120%;
   }
-   #cv:hover{
+  #cv:hover {
     margin-top: 118%;
   }
-  .skills{
+  .skills {
     width: 100%;
   }
   #skillbar {
@@ -1819,180 +1829,185 @@ footer p {
   #htmlbarin {
     width: 90%;
   }
-  #cssbarin{
+  #cssbarin {
     width: 80%;
   }
-  #jsbarin{
+  #jsbarin {
     width: 35%;
   }
-  #nodebarin{
+  #nodebarin {
     width: 15%;
   }
-  .project{
+  .project {
     width: 100%;
   }
-  #kht{
+  #kht {
     margin-top: 15px;
     width: 97%;
     height: 29%;
     margin-left: 5px;
   }
-  #kht:hover{
+  #kht:hover {
     margin-top: 15px;
     width: 98%;
     height: 30%;
     margin-left: 5px;
   }
-  #kht #baglanti{
+  #kht #baglanti {
     font-size: 15px;
     margin-top: 5px;
     margin-left: 95%;
   }
-  #kht i{
+  #kht i {
     font-size: 50px;
     margin-left: 10px;
     margin-top: 20%;
   }
-  #kht:hover i{
+  #kht:hover i {
     font-size: 52px;
     margin-left: 10px;
     margin-top: 20%;
   }
-  #kht h1{
+  #kht h1 {
     font-size: 18px;
     margin-top: 20px;
     margin-left: 20%;
   }
-  #kht:hover h1{
+  #kht:hover h1 {
     font-size: 20px;
     margin-top: 20px;
     margin-left: 20%;
   }
-  #kht p{
+  #kht p {
     font-size: 13px;
     margin-top: 70px;
     margin-left: 60px;
   }
-  #kht:hover p{
+  #kht:hover p {
     font-size: 14px;
     margin-top: 70px;
     margin-left: 60px;
   }
-  #qp{
+  #qp {
     margin-top: 235px;
     width: 97%;
     height: 29%;
     margin-left: 5px;
   }
-    #qp:hover{
+  #qp:hover {
     margin-top: 235px;
     width: 98%;
     height: 30%;
     margin-left: 5px;
   }
-  #qp #baglanti2{
+  #qp #baglanti2 {
     font-size: 15px;
     margin-top: 5px;
     margin-left: 95%;
   }
-  #qp i{
+  #qp i {
     font-size: 50px;
     margin-left: 10px;
     margin-top: 20%;
   }
-  #qp:hover i{
+  #qp:hover i {
     font-size: 52px;
     margin-left: 10px;
     margin-top: 20%;
   }
-  #qp h1{
+  #qp h1 {
     font-size: 18px;
     margin-top: 20px;
     margin-left: 50%;
   }
-  #qp:hover h1{
+  #qp:hover h1 {
     font-size: 20px;
     margin-top: 20px;
     margin-left: 50%;
   }
-  #qp p{
+  #qp p {
     font-size: 13px;
     margin-top: 50px;
     margin-left: 60px;
   }
-  #qp:hover p{
+  #qp:hover p {
     font-size: 14px;
     margin-top: 50px;
     margin-left: 60px;
   }
-  #ttp{
+  #ttp {
     margin-top: 455px;
     width: 97%;
     height: 29%;
     margin-left: 5px;
   }
-    #ttp:hover{
+  #ttp:hover {
     margin-top: 455px;
     width: 98%;
     height: 30%;
     margin-left: 5px;
   }
-  #ttp #baglanti3{
+  #ttp #baglanti3 {
     font-size: 15px;
     margin-top: 5px;
     margin-left: 95%;
   }
-  #ttp i{
+  #ttp i {
     font-size: 50px;
     margin-left: 10px;
     margin-top: 20%;
   }
-  #ttp:hover i{
+  #ttp:hover i {
     font-size: 52px;
     margin-left: 10px;
     margin-top: 20%;
   }
-  #ttp h1{
+  #ttp h1 {
     font-size: 18px;
     margin-top: 20px;
     margin-left: 50%;
   }
-  #ttp:hover h1{
+  #ttp:hover h1 {
     font-size: 20px;
     margin-top: 20px;
     margin-left: 50%;
   }
-  #ttp p{
+  #ttp p {
     font-size: 13px;
     margin-top: 50px;
     margin-left: 60px;
   }
-  #ttp:hover p{
+  #ttp:hover p {
     font-size: 14px;
     margin-top: 50px;
     margin-left: 60px;
   }
-  .contact{
+  .contact {
     width: 100%;
   }
-  #contactbox{
+  #contactbox {
     width: 100%;
     height: 620px;
     margin-left: 0px;
   }
-  #adsoyad,#mail,#mesaj,#file,#gonder,#reset{
+  #adsoyad,
+  #mail,
+  #mesaj,
+  #file,
+  #gonder,
+  #reset {
     margin-top: 30px;
     margin-left: 35%;
     width: 95%;
   }
-  footer{
+  footer {
     width: 100%;
     margin-left: 0px;
   }
-  .bgicons{
+  .bgicons {
     font-size: 45px;
   }
-  .bgicons2{
+  .bgicons2 {
     font-size: 45px;
   }
 }
@@ -2005,10 +2020,10 @@ footer p {
     margin-bottom: -150px;
   }
   .header:hover {
-  margin-left: 15px;
-  width: 92%;
-}
-  .content{
+    margin-left: 15px;
+    width: 92%;
+  }
+  .content {
     margin-left: 0px;
     margin-top: 70px;
     width: 100%;
@@ -2021,9 +2036,9 @@ footer p {
     margin-top: 15px;
   }
   .nav a:hover {
-  font-size: 73%;
-  transition: 0.7s;
-}
+    font-size: 73%;
+    transition: 0.7s;
+  }
   .img {
     width: 200px;
     height: 200px;
@@ -2053,9 +2068,9 @@ footer p {
     height: 30px;
     padding-top: 3px;
     margin-left: 20%;
-    margin-top:  120%;
+    margin-top: 120%;
   }
-  #insta:hover{
+  #insta:hover {
     margin-top: 118%;
   }
   #lnkd {
@@ -2066,7 +2081,7 @@ footer p {
     margin-left: 30%;
     margin-top: 120%;
   }
-   #lnkd:hover{
+  #lnkd:hover {
     margin-top: 118%;
   }
   #github {
@@ -2077,7 +2092,7 @@ footer p {
     margin-left: 40%;
     margin-top: 120%;
   }
-   #github:hover{
+  #github:hover {
     margin-top: 118%;
   }
   #cv {
@@ -2089,10 +2104,10 @@ footer p {
     margin-left: 50%;
     margin-top: 120%;
   }
-   #cv:hover{
+  #cv:hover {
     margin-top: 118%;
   }
-  .skills{
+  .skills {
     width: 100%;
   }
   #skillbar {
@@ -2117,180 +2132,185 @@ footer p {
   #htmlbarin {
     width: 90%;
   }
-  #cssbarin{
+  #cssbarin {
     width: 80%;
   }
-  #jsbarin{
+  #jsbarin {
     width: 35%;
   }
-  #nodebarin{
+  #nodebarin {
     width: 15%;
   }
-  .project{
+  .project {
     width: 100%;
   }
-  #kht{
+  #kht {
     margin-top: 15px;
     width: 97%;
     height: 29%;
     margin-left: 5px;
   }
-  #kht:hover{
+  #kht:hover {
     margin-top: 15px;
     width: 98%;
     height: 30%;
     margin-left: 5px;
   }
-  #kht #baglanti{
+  #kht #baglanti {
     font-size: 15px;
     margin-top: 5px;
     margin-left: 95%;
   }
-  #kht i{
+  #kht i {
     font-size: 50px;
     margin-left: 10px;
     margin-top: 20%;
   }
-  #kht:hover i{
+  #kht:hover i {
     font-size: 52px;
     margin-left: 10px;
     margin-top: 20%;
   }
-  #kht h1{
+  #kht h1 {
     font-size: 18px;
     margin-top: 20px;
     margin-left: 20%;
   }
-  #kht:hover h1{
+  #kht:hover h1 {
     font-size: 20px;
     margin-top: 20px;
     margin-left: 20%;
   }
-  #kht p{
+  #kht p {
     font-size: 13px;
     margin-top: 70px;
     margin-left: 60px;
   }
-  #kht:hover p{
+  #kht:hover p {
     font-size: 14px;
     margin-top: 70px;
     margin-left: 60px;
   }
-  #qp{
+  #qp {
     margin-top: 235px;
     width: 97%;
     height: 29%;
     margin-left: 5px;
   }
-    #qp:hover{
+  #qp:hover {
     margin-top: 235px;
     width: 98%;
     height: 30%;
     margin-left: 5px;
   }
-  #qp #baglanti2{
+  #qp #baglanti2 {
     font-size: 15px;
     margin-top: 5px;
     margin-left: 95%;
   }
-  #qp i{
+  #qp i {
     font-size: 50px;
     margin-left: 10px;
     margin-top: 20%;
   }
-  #qp:hover i{
+  #qp:hover i {
     font-size: 52px;
     margin-left: 10px;
     margin-top: 20%;
   }
-  #qp h1{
+  #qp h1 {
     font-size: 18px;
     margin-top: 20px;
     margin-left: 50%;
   }
-  #qp:hover h1{
+  #qp:hover h1 {
     font-size: 20px;
     margin-top: 20px;
     margin-left: 50%;
   }
-  #qp p{
+  #qp p {
     font-size: 13px;
     margin-top: 50px;
     margin-left: 60px;
   }
-  #qp:hover p{
+  #qp:hover p {
     font-size: 14px;
     margin-top: 50px;
     margin-left: 60px;
   }
-  #ttp{
+  #ttp {
     margin-top: 455px;
     width: 97%;
     height: 29%;
     margin-left: 5px;
   }
-    #ttp:hover{
+  #ttp:hover {
     margin-top: 455px;
     width: 98%;
     height: 30%;
     margin-left: 5px;
   }
-  #ttp #baglanti3{
+  #ttp #baglanti3 {
     font-size: 15px;
     margin-top: 5px;
     margin-left: 95%;
   }
-  #ttp i{
+  #ttp i {
     font-size: 50px;
     margin-left: 10px;
     margin-top: 20%;
   }
-  #ttp:hover i{
+  #ttp:hover i {
     font-size: 52px;
     margin-left: 10px;
     margin-top: 20%;
   }
-  #ttp h1{
+  #ttp h1 {
     font-size: 18px;
     margin-top: 20px;
     margin-left: 50%;
   }
-  #ttp:hover h1{
+  #ttp:hover h1 {
     font-size: 20px;
     margin-top: 20px;
     margin-left: 50%;
   }
-  #ttp p{
+  #ttp p {
     font-size: 13px;
     margin-top: 50px;
     margin-left: 60px;
   }
-  #ttp:hover p{
+  #ttp:hover p {
     font-size: 14px;
     margin-top: 50px;
     margin-left: 60px;
   }
-  .contact{
+  .contact {
     width: 100%;
   }
-  #contactbox{
+  #contactbox {
     width: 100%;
     height: 620px;
     margin-left: 0px;
   }
-  #adsoyad,#mail,#mesaj,#file,#gonder,#reset{
+  #adsoyad,
+  #mail,
+  #mesaj,
+  #file,
+  #gonder,
+  #reset {
     margin-top: 30px;
     margin-left: 35%;
     width: 95%;
   }
-  footer{
+  footer {
     width: 100%;
     margin-left: 0px;
   }
-  .bgicons{
+  .bgicons {
     font-size: 45px;
   }
-  .bgicons2{
+  .bgicons2 {
     font-size: 45px;
   }
 }
