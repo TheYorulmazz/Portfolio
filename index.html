@@ -44,1175 +44,2310 @@
 
     <title>Özcan Yorulmaz</title>
 
+    <link rel="stylesheet" href="style.css">
+
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron:wght@400..900&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap");
-      body {
-        background-color: #110232;
-      }
-      .header {
-        background-color: #ffffff;
-        width: 40%;
-        margin-left: 450px;
-        margin-top: 20px;
-        height: 60px;
-        border-radius: 50px;
-        display: flex;
-        transition: 0.7s;
-        background: rgba(164, 164, 164, 0.5);
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1000;
-      }
-      #content,
-      #skills,
-      #project,
-      #contact {
-        scroll-margin-top: 110px;
-      }
-      .header:hover {
-        margin-left: 435px;
-        width: 42%;
-        transition: 0.3s;
-        box-shadow: 0 0 10px rgb(255, 255, 255);
-      }
-      .header:hover .nav {
-        transition: 0.2s;
-        margin-left: -15px;
-      }
-      .img {
-        background-image: url(https://i.hizliresim.com/dzxaw2v.jpg?_gl=1*1408dn6*_ga*NDczMDY5NDgxLjE3NTQzMzI3NTk.*_ga_M9ZRXYS2YN*czE3NTQ1MDQ0NjQkbzMkZzEkdDE3NTQ1MDU0MTAkajQ4JGwwJGgw);
-        width: 400px;
-        height: 550px;
-        border-radius: 50%;
-        background-size: cover;
-        background-position: center 4%;
-        margin-left: 950px;
-        top: 35px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-        transition: all 0.6s;
-        z-index: 2;
-        position: relative;
-      }
-      .yazi {
-        text-align: left;
-        background: linear-gradient(
-          to right in oklch,
-          rgb(176, 190, 242),
-          rgb(211, 220, 255)
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
-        margin-left: 100px;
-        margin-top: 10px;
-        overflow: hidden;
-        display: inline-block;
-        position: absolute;
-        z-index: 3;
-      }
-      .yazi p {
-        font-size: 20px;
-        margin-left: 10px;
-        display: flex;
-        margin-top: -5px;
-      }
-      .yazi h6 {
-        margin-bottom: 5px;
-        display: flex;
-      }
-      .yazi h3 {
-        margin-top: 23%;
-        margin-bottom: -100px;
-        display: flex;
-      }
-      .header .nav {
-        margin-left: -27px;
-        margin-top: -17px;
-      }
-      .header a {
-        text-decoration: none;
-        background: linear-gradient(
-          to right in oklch,
-          rgb(176, 190, 242),
-          rgb(211, 220, 255)
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
-        font-size: 50px;
-        margin-left: 20px;
-        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-        font-style: bold;
-        z-index: 1;
-        margin-top: 20px;
-        transition: 0.7s;
-        white-space: nowrap;
-      }
-      .nav {
-        display: flex;
-        transition: 0.7s;
-      }
-      .nav a {
-        font-size: 18px;
-        transition: 0.7s;
-        font-family: "Orbitron", sans-serif;
-      }
-      .nav a:hover {
-        font-size: 20px;
-        transition: 0.7s;
-      }
-      .nav li {
-        display: inline-block;
-        margin: 10px;
-        margin-top: 35px;
-        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-        font-size: 20px;
-      }
-      .bgicons {
-        font-size: 60px;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        position: relative;
-        z-index: 1;
-      }
-      .bgicons span {
-        color: #1a005b;
-        opacity: 1;
-        position: absolute;
-        transition: 0.8s;
-        z-index: 1;
-      }
-      .bgicons2 {
-        font-size: 60px;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        z-index: 1;
-      }
-      .bgicons2 span {
-        color: #070019;
-        opacity: 1;
-        position: absolute;
-        transition: 0.8s;
-      }
-      #html1 {
-        top: 380px;
-        left: 820px;
-        transform: rotate(20deg);
-        font-size: 70px;
-      }
-      .code1 {
-        top: 440px;
-        left: 510px;
-        transform: rotate(10deg);
-      }
-      .code2 {
-        top: 400px;
-        left: 1000px;
-        transform: rotate(40deg);
-      }
-      .lcode1 {
-        top: 70px;
-        left: 600px;
-        transform: rotate(-20deg);
-      }
-      .lcode2 {
-        top: 500px;
-        left: 800px;
-        transform: rotate(80deg);
-      }
-      .fcode1 {
-        top: 100px;
-        left: 900px;
-        transform: rotate(-40deg);
-      }
-      .fcode2 {
-        top: 450px;
-        left: 1200px;
-        transform: rotate(90deg);
-      }
-      .css1 {
-        top: 250px;
-        left: 200px;
-        transform: rotate(-10deg);
-      }
-      .css2 {
-        top: 50px;
-        left: 100px;
-        transform: rotate(65deg);
-      }
-      .condev1 {
-        top: 100px;
-        left: 400px;
-        transform: rotate(-54deg);
-      }
-      .condev2 {
-        top: 300px;
-        left: 700px;
-        transform: rotate(30deg);
-      }
-      .node1 {
-        top: 500px;
-        left: 100px;
-        transform: rotate(20deg);
-      }
-      .node2 {
-        top: 150px;
-        left: 1100px;
-        transform: rotate(67deg);
-      }
-      .js1 {
-        top: 300px;
-        left: 1300px;
-        transform: rotate(-90deg);
-      }
-      .js2 {
-        top: 50px;
-        left: 1200px;
-        transform: rotate(-27deg);
-      }
-      .bug1 {
-        top: 500px;
-        left: 300px;
-        transform: rotate(-30deg);
-      }
-      .content {
-        width: 100%;
-        background-color: #070019;
-        height: 620px;
-        margin-top: 110px;
-        border-radius: 20px;
-        position: relative;
-        transition: 0.6s;
-      }
-      .content h5 {
-        font-family: "Monoton", sans-serif;
-        margin-bottom: -90px;
-        margin-top: 130px;
-        transition: 1s;
-      }
-      .content:hover {
-        transition: 0.6s;
-      }
-      .content h6 {
-        font-family: "Orbitron", sans-serif;
-        margin-bottom: 10px;
-        margin-top: 85px;
-        transition: 0.6s;
-      }
-      .content:hover h6 {
-        color: #440000;
-        transition: 0.6s;
-      }
-      .content #paragraf {
-        margin-top: 0px;
-        margin-left: -10px;
-        font-family: "Google Sans Code", monospace;
-        letter-spacing: -2px;
-      }
-      .skills {
-        background-color: #0e0030;
-        width: 100%;
-        height: 740px;
-        position: relative;
-        border-radius: 10px;
-        text-align: center;
-        color: white;
-      }
-      .project {
-        background-color: #070019;
-        width: 100%;
-        height: 740px;
-        position: relative;
-        border-radius: 10px;
-        text-align: center;
-        color: white;
-      }
-      #baslik {
-        background: linear-gradient(
-          to right in oklch,
-          rgb(176, 190, 242),
-          rgb(211, 220, 255)
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
-        margin-top: 20px;
-        margin-bottom: -30px;
-        display: inline-block;
-        font-family: "Orbitron", sans-serif;
-      }
-      #baslik2 {
-        background: linear-gradient(
-          to right in oklch,
-          rgb(176, 190, 242),
-          rgb(211, 220, 255)
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
-        font-family: "Orbitron", sans-serif;
-      }
-      .contact {
-        background-color: #0e0030;
-        width: 100%;
-        height: 740px;
-        position: relative;
-        border-radius: 20px;
-        text-align: center;
-        color: white;
-      }
-      #insta {
-        background: rgba(164, 164, 164, 0.5);
-        border-radius: 15px;
-        width: 50px;
-        height: 40px;
-        margin-top: 430px;
-        margin-left: 110px;
-        font-size: 30px;
-        display: flex;
-        position: absolute;
-        transition: 0.6s;
-      }
-      #insta:hover {
-        margin-top: 420px;
-        box-shadow: 0 0 10px white;
-      }
-      #insta a {
-        background: linear-gradient(
-          to right in oklch,
-          rgb(176, 190, 242),
-          rgb(211, 220, 255)
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
-        margin-left: 6px;
-        margin-top: 5px;
-      }
-      #lnkd {
-        background: rgba(164, 164, 164, 0.5);
-        border-radius: 15px;
-        width: 50px;
-        height: 40px;
-        margin-top: 430px;
-        font-size: 30px;
-        margin-left: 170px;
-        display: flex;
-        position: absolute;
-        transition: 0.6s;
-      }
-      #lnkd:hover {
-        margin-top: 420px;
-        box-shadow: 0 0 10px white;
-      }
-      #lnkd a {
-        background: linear-gradient(
-          to right in oklch,
-          rgb(176, 190, 242),
-          rgb(211, 220, 255)
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
-        margin-left: 6px;
-        margin-top: 5px;
-      }
-      #github {
-        background: rgba(164, 164, 164, 0.5);
-        border-radius: 15px;
-        width: 50px;
-        height: 40px;
-        margin-top: 430px;
-        margin-left: 230px;
-        position: absolute;
-        display: flex;
-        font-size: 30px;
-        transition: 0.6s;
-      }
-      #github:hover {
-        margin-top: 420px;
-        box-shadow: 0 0 10px white;
-      }
-      #github a {
-        background: linear-gradient(
-          to right in oklch,
-          rgb(176, 190, 242),
-          rgb(211, 220, 255)
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
-        margin-left: 6px;
-        margin-top: 5px;
-      }
-      #cv {
-        background: rgba(164, 164, 164, 0.5);
-        border-radius: 15px;
-        width: 250px;
-        height: 40px;
-        margin-top: 430px;
-        margin-left: 290px;
-        position: absolute;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        font-size: 30px;
-        transition: 0.6s;
-      }
-      #cv:hover {
-        margin-top: 420px;
-        box-shadow: 0 0 10px white;
-      }
-      #cv a {
-        background: linear-gradient(
-          to right in oklch,
-          rgb(176, 190, 242),
-          rgb(211, 220, 255)
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
-        margin-left: 10px;
-        margin-top: 3px;
-      }
-      #cv h6 {
-        margin-left: 30px;
-        margin-top: -28px;
-        margin-bottom: 5px;
-        display: flex;
-        align-items: center;
-      }
-      #up {
-        position: fixed;
-        right: 20px;
-        bottom: 20px;
-        background: rgba(164, 164, 164, 0.5);
-        border-radius: 10px;
-        width: 30px;
-        height: 30px;
-        z-index: 999;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: 0.6s;
-      }
-      #up:hover {
-        bottom: 40px;
-        box-shadow: 0 0 10px #fff;
-        transition: 0.6s;
-      }
-      #up a {
-        padding-top: 3px;
-        background: linear-gradient(
-          to right in oklch,
-          rgb(176, 190, 242),
-          rgb(211, 220, 255)
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
-        font-size: 25px;
-      }
-      footer {
-        background-color: #070019;
-        text-align: center;
-        padding: 3px;
-        display: block;
-        border-radius: 20px;
-      }
-      footer p {
-        background: linear-gradient(
-          to right in oklch,
-          rgb(176, 190, 242),
-          rgb(211, 220, 255)
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
-      }
-      #skillbar {
-        width: 70%;
-        height: 85%;
-        background: rgba(164, 164, 164, 0.5);
-        margin-left: 220px;
-        border-radius: 10px;
-        padding-top: 1px;
-        transition: 0.6s;
-        position: relative;
-        z-index: 2;
-      }
-      #skillbar:hover {
-        transition: 0.6s;
-        box-shadow: 0 0 50px white;
-      }
-      #skillbar h2 {
-        background: linear-gradient(
-          to right in oklch,
-          rgb(176, 190, 242),
-          rgb(211, 220, 255)
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
-      }
-      #cbar {
-        box-shadow: 0 0 10px inset white;
-        margin-left: 220px;
-        margin-top: 20px;
-        width: 560px;
-        height: 30px;
-        border-radius: 10px;
-        background-color: #0e0030;
-        z-index: 2;
-        position: relative;
-        transition: 0.6s;
-      }
-      #cbarin {
-        width: 350px;
-        height: 30px;
-        box-shadow: 0 0 10px white;
-        border-radius: 10px;
-        background: linear-gradient(
-          to right in oklch,
-          rgb(176, 190, 242),
-          rgb(211, 220, 255)
-        );
-        justify-content: center;
-        text-align: center;
-        position: relative;
-        z-index: 3;
-        transition: 0.6s;
-      }
-      #sqlbar {
-        box-shadow: 0 0 10px inset white;
-        margin-left: 220px;
-        margin-top: 20px;
-        width: 560px;
-        height: 30px;
-        border-radius: 10px;
-        background-color: #0e0030;
-        z-index: 2;
-        position: relative;
-        transition: 0.6s;
-      }
-      #sqlbarin {
-        width: 390px;
-        height: 30px;
-        box-shadow: 0 0 10px white;
-        border-radius: 10px;
-        background: linear-gradient(
-          to right in oklch,
-          rgb(176, 190, 242),
-          rgb(211, 220, 255)
-        );
-        justify-content: center;
-        text-align: center;
-        position: relative;
-        z-index: 3;
-        transition: 0.6s;
-      }
-      #htmlbar {
-        box-shadow: 0 0 10px inset white;
-        margin-left: 220px;
-        margin-top: 20px;
-        width: 560px;
-        height: 30px;
-        border-radius: 10px;
-        background-color: #0e0030;
-        z-index: 2;
-        position: relative;
-        transition: 0.6s;
-      }
-      #htmlbarin {
-        width: 490px;
-        height: 30px;
-        box-shadow: 0 0 10px white;
-        border-radius: 10px;
-        background: linear-gradient(
-          to right in oklch,
-          rgb(176, 190, 242),
-          rgb(211, 220, 255)
-        );
-        justify-content: center;
-        text-align: center;
-        position: relative;
-        z-index: 3;
-        transition: 0.6s;
-      }
-      #cssbar {
-        box-shadow: 0 0 10px inset white;
-        margin-left: 220px;
-        margin-top: 20px;
-        width: 560px;
-        height: 30px;
-        border-radius: 10px;
-        background-color: #0e0030;
-        z-index: 2;
-        position: relative;
-        transition: 0.6s;
-      }
-      #cssbarin {
-        width: 400px;
-        height: 30px;
-        box-shadow: 0 0 10px white;
-        border-radius: 10px;
-        background: linear-gradient(
-          to right in oklch,
-          rgb(176, 190, 242),
-          rgb(211, 220, 255)
-        );
-        justify-content: center;
-        text-align: center;
-        position: relative;
-        z-index: 3;
-        transition: 0.6s;
-      }
-      #jsbar {
-        box-shadow: 0 0 10px inset white;
-        margin-left: 220px;
-        margin-top: 20px;
-        width: 560px;
-        height: 30px;
-        border-radius: 10px;
-        background-color: #0e0030;
-        z-index: 2;
-        position: relative;
-        transition: 0.6s;
-      }
-      #jsbarin {
-        width: 200px;
-        height: 30px;
-        box-shadow: 0 0 10px white;
-        border-radius: 10px;
-        background: linear-gradient(
-          to right in oklch,
-          rgb(176, 190, 242),
-          rgb(211, 220, 255)
-        );
-        justify-content: center;
-        text-align: center;
-        position: relative;
-        z-index: 3;
-        transition: 0.6s;
-      }
-      #nodebar {
-        box-shadow: 0 0 10px inset white;
-        margin-left: 220px;
-        margin-top: 20px;
-        width: 560px;
-        height: 30px;
-        border-radius: 10px;
-        background-color: #0e0030;
-        z-index: 2;
-        position: relative;
-        transition: 0.6s;
-      }
-      #nodebarin {
-        width: 100px;
-        height: 30px;
-        box-shadow: 0 0 10px white;
-        border-radius: 10px;
-        background: linear-gradient(
-          to right in oklch,
-          rgb(176, 190, 242),
-          rgb(211, 220, 255)
-        );
-        justify-content: center;
-        text-align: center;
-        position: relative;
-        z-index: 3;
-        transition: 0.6s;
-      }
-      #kht {
-        width: 400px;
-        height: 500px;
-        background: rgba(164, 164, 164, 0.5);
-        text-decoration: none;
-        color: white;
-        overflow: hidden;
-        font-size: 15px;
-        display: flex;
-        position: absolute;
-        margin-left: 60px;
-        margin-top: 90px;
-        text-align: center;
-        border-radius: 10px;
-        z-index: 2;
-        transition: 0.6s;
-      }
-      #kht i {
-        font-size: 150px;
-        position: relative;
-        margin-top: 20px;
-        margin-left: 125px;
-        transition: 0.6s;
-        background: linear-gradient(
-          to right in oklch,
-          rgb(176, 190, 242),
-          rgb(211, 220, 255)
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
-        transition: 0.6s;
-      }
-      #kht h1 {
-        margin-top: 190px;
-        margin-left: 0px;
-        background: linear-gradient(
-          to right in oklch,
-          rgb(176, 190, 242),
-          rgb(211, 220, 255)
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
-        display: block;
-        text-align: center;
-        position: absolute;
-        transition: 0.6s;
-        font-family: "Google Sans Code", monospace;
-        letter-spacing: -2px;
-      }
-      #kht p {
-        margin-top: 290px;
-        padding-left: 10px;
-        padding-right: 10px;
-        font-size: 20px;
-        background: linear-gradient(
-          to right in oklch,
-          rgb(176, 190, 242),
-          rgb(211, 220, 255)
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
-        font-family: "Google Sans Code", monospace;
-        letter-spacing: -3px;
-        position: absolute;
-        display: block;
-        transition: 0.6s;
-      }
-      #kht:hover {
-        transition: 0.6s;
-        box-shadow: 0 0 40px white;
-        width: 440px;
-        height: 540px;
-        margin-left: 40px;
-        margin-top: 70px;
-      }
-      #kht:hover h1 {
-        transition: 0.6s;
-        font-size: 35px;
-        margin-left: 0px;
-      }
-      #kht:hover p {
-        transition: 0.6s;
-        font-size: 21px;
-        margin-top: 290px;
-      }
-      #kht:hover i {
-        transition: 0.6s;
-        font-size: 170px;
-        margin-left: 130px;
-      }
-      #qp {
-        width: 400px;
-        height: 500px;
-        background: rgba(164, 164, 164, 0.5);
-        text-decoration: none;
-        color: white;
-        overflow: hidden;
-        font-size: 15px;
-        display: flex;
-        position: absolute;
-        margin-left: 530px;
-        margin-top: 90px;
-        text-align: center;
-        border-radius: 10px;
-        z-index: 2;
-        transition: 0.6s;
-      }
-      #qp i {
-        font-size: 150px;
-        position: relative;
-        margin-top: 20px;
-        margin-left: 130px;
-        background: linear-gradient(
-          to right in oklch,
-          rgb(176, 190, 242),
-          rgb(211, 220, 255)
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
-        transition: 0.6s;
-      }
-      #qp h1 {
-        margin-top: 190px;
-        margin-left: 140px;
-        display: block;
-        text-align: center;
-        position: absolute;
-        background: linear-gradient(
-          to right in oklch,
-          rgb(176, 190, 242),
-          rgb(211, 220, 255)
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
-        font-family: "Google Sans Code", monospace;
-        letter-spacing: -2px;
-        transition: 0.6s;
-      }
-      #qp p {
-        margin-top: 250px;
-        font-size: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
-        position: absolute;
-        display: block;
-        background: linear-gradient(
-          to right in oklch,
-          rgb(176, 190, 242),
-          rgb(211, 220, 255)
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
-        font-family: "Google Sans Code", monospace;
-        letter-spacing: -3px;
-        transition: 0.6s;
-      }
-      #qp:hover {
-        transition: 0.6s;
-        box-shadow: 0 0 40px white;
-        width: 440px;
-        height: 540px;
-        margin-left: 510px;
-        margin-top: 70px;
-      }
-      #qp:hover h1 {
-        transition: 0.6s;
-        font-size: 35px;
-        margin-top: 200px;
-        margin-left: 150px;
-      }
-      #qp:hover p {
-        transition: 0.6s;
-        font-size: 20px;
-        margin-top: 255px;
-      }
-      #qp:hover i {
-        transition: 0.6s;
-        font-size: 170px;
-        margin-left: 140px;
-      }
-      #ttp {
-        width: 400px;
-        height: 500px;
-        background: rgba(164, 164, 164, 0.5);
-        text-decoration: none;
-        color: white;
-        overflow: hidden;
-        font-size: 15px;
-        display: flex;
-        position: absolute;
-        margin-left: 1000px;
-        margin-top: 90px;
-        text-align: center;
-        border-radius: 10px;
-        z-index: 2;
-        transition: 0.6s;
-      }
-      #ttp i {
-        font-size: 150px;
-        position: relative;
-        margin-top: 20px;
-        margin-left: 100px;
-        background: linear-gradient(
-          to right in oklch,
-          rgb(176, 190, 242),
-          rgb(211, 220, 255)
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
-        transition: 0.6s;
-      }
-      #ttp h1 {
-        margin-top: 190px;
-        margin-left: 110px;
-        display: block;
-        text-align: center;
-        position: absolute;
-        background: linear-gradient(
-          to right in oklch,
-          rgb(176, 190, 242),
-          rgb(211, 220, 255)
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
-        letter-spacing: -2px;
-        font-family: "Google Sans Code", monospace;
-        transition: 0.6s;
-      }
-      #ttp p {
-        margin-top: 250px;
-        font-size: 20px;
-        position: absolute;
-        display: block;
-        background: linear-gradient(
-          to right in oklch,
-          rgb(176, 190, 242),
-          rgb(211, 220, 255)
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
-        padding-left: 20px;
-        padding-right: 20px;
-        letter-spacing: -3px;
-        font-family: "Google Sans Code", monospace;
-        transition: 0.6s;
-      }
-      #ttp:hover {
-        transition: 0.6s;
-        box-shadow: 0 0 40px white;
-        width: 440px;
-        height: 540px;
-        margin-left: 980px;
-        margin-top: 70px;
-      }
-      #ttp:hover h1 {
-        transition: 0.6s;
-        font-size: 35px;
-        margin-left: 120px;
-        margin-top: 200px;
-      }
-      #ttp:hover p {
-        transition: 0.6s;
-        font-size: 20px;
-        margin-top: 255px;
-      }
-      #ttp:hover i {
-        transition: 0.6s;
-        font-size: 170px;
-        margin-left: 110px;
-      }
-      #kht #baglanti {
-        position: absolute;
-        font-size: 25px;
-        margin-left: 350px;
-        transition: 0.6s;
-      }
-      #kht:hover #baglanti {
-        transition: 0.6s;
-        margin-left: 390px;
-        font-size: 27px;
-      }
-      #qp #baglanti2 {
-        position: absolute;
-        font-size: 25px;
-        margin-left: 350px;
-        transition: 0.6s;
-      }
-      #qp:hover #baglanti2 {
-        transition: 0.6s;
-        margin-left: 390px;
-        font-size: 27px;
-      }
-      #ttp #baglanti3 {
-        position: absolute;
-        font-size: 25px;
-        margin-left: 350px;
-        transition: 0.6s;
-      }
-      #ttp:hover #baglanti3 {
-        transition: 0.6s;
-        margin-left: 390px;
-        font-size: 27px;
-      }
-      #contactbox {
-        width: 1200px;
-        height: 650px;
-        background: rgba(164, 164, 164, 0.5);
-        border-radius: 10px;
-        margin-left: 130px;
-        position: absolute;
-        text-align: center;
-        display: flex;
-        z-index: 2;
-        transition: 0.6s;
-      }
-      #contactbox:hover {
-        transition: 0.6s;
-        box-shadow: 0 0 30px white;
-      }
-      #adsoyad {
-        display: flex;
-        background: rgba(17, 2, 50);
-        color: #fff;
-        width: 500px;
-        height: 40px;
-        border-radius: 10px;
-        margin-left: 350px;
-        margin-top: 80px;
-        padding-left: 10px;
-        z-index: 3;
-        position: relative;
-        font-family: "Google Sans Code", monospace;
-        transition: 0.6s;
-      }
-      #adsoyad:hover {
-        transition: 0.6s;
-        box-shadow: 0 0 30px white;
-      }
-      #mail {
-        display: flex;
-        background: rgba(17, 2, 50);
-        color: #fff;
-        width: 500px;
-        height: 40px;
-        border-radius: 10px;
-        margin-left: 350px;
-        margin-top: 40px;
-        padding-left: 10px;
-        z-index: 3;
-        position: relative;
-        transition: 0.6s;
-        font-family: "Google Sans Code", monospace;
-      }
-      #mail:hover {
-        transition: 0.6s;
-        box-shadow: 0 0 30px white;
-      }
-      #mesaj {
-        display: flex;
-        background: rgba(17, 2, 50);
-        color: #fff;
-        width: 500px;
-        height: 200px;
-        border-radius: 10px;
-        margin-left: 350px;
-        margin-top: 40px;
-        padding-left: 10px;
-        padding-top: 10px;
-        z-index: 3;
-        position: relative;
-        transition: 0.6s;
-        font-family: "Google Sans Code", monospace;
-      }
-      #mesaj:hover {
-        transition: 0.6s;
-        box-shadow: 0 0 30px white;
-      }
-      #gonder {
-        display: inline-block;
-        background: rgba(17, 2, 50);
-        color: #fff;
-        width: 240px;
-        height: 40px;
-        border-radius: 10px;
-        margin-left: 85px;
-        margin-top: 20px;
-        z-index: 3;
-        position: relative;
-        transition: 0.6s;
-        font-family: "Google Sans Code", monospace;
-      }
-      #gonder:hover {
-        transition: 0.6s;
-        box-shadow: 0 0 30px white;
-      }
-      #file {
-        display: flex;
-        background: rgba(17, 2, 50);
-        color: #fff;
-        width: 510px;
-        height: 30px;
-        border-radius: 10px;
-        margin-left: 350px;
-        margin-top: 20px;
-        padding-top: 10px;
-        padding-bottom: 3px;
-        padding-left: 5px;
-        z-index: 3;
-        position: relative;
-        font-family: "Google Sans Code", monospace;
-        transition: 0.6s;
-      }
-      #file:hover {
-        transition: 0.6s;
-        box-shadow: 0 0 30px white;
-      }
-      #reset {
-        display: flex;
-        background: rgba(17, 2, 50);
-        color: #fff;
-        width: 240px;
-        height: 40px;
-        border-radius: 10px;
-        margin-left: 620px;
-        margin-top: -40px;
-        z-index: 3;
-        position: relative;
-        transition: 0.6s;
-        font-family: "Google Sans Code", monospace;
-      }
-      #reset:hover {
-        transition: 0.6s;
-        box-shadow: 0 0 30px white;
-      }
-      #baslik3 {
-        background: linear-gradient(
-          to right in oklch,
-          rgb(176, 190, 242),
-          rgb(211, 220, 255)
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
-        font-family: "Orbitron", sans-serif;
-      }
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap");
+body {
+  background-color: #110232;
+  width: 96%;
+}
+.header {
+  background-color: #ffffff;
+  width: 40%;
+  margin-left: 450px;
+  margin-top: 20px;
+  height: 60px;
+  border-radius: 50px;
+  display: flex;
+  transition: 0.7s;
+  background: rgba(164, 164, 164, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+#content,
+#skills,
+#project,
+#contact {
+  scroll-margin-top: 110px;
+}
+.header:hover {
+  margin-left: 435px;
+  width: 42%;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+.header:hover .nav {
+  transition: 0.2s;
+  margin-left: -15px;
+}
+.img {
+  background-image: url(https://i.hizliresim.com/dzxaw2v.jpg?_gl=1*1408dn6*_ga*NDczMDY5NDgxLjE3NTQzMzI3NTk.*_ga_M9ZRXYS2YN*czE3NTQ1MDQ0NjQkbzMkZzEkdDE3NTQ1MDU0MTAkajQ4JGwwJGgw);
+  width: 400px;
+  height: 550px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center 4%;
+  margin-left: 950px;
+  top: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  transition: all 0.6s;
+  z-index: 2;
+  position: relative;
+}
+.yazi {
+  background: linear-gradient(
+    to right in oklch,
+    rgb(176, 190, 242),
+    rgb(211, 220, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin-left: 100px;
+  margin-top: 10px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 3;
+}
+.yazi p {
+  font-size: 20px;
+  margin-left: 10px;
+  display: flex;
+  margin-top: -5px;
+}
+.yazi h6 {
+  margin-bottom: 5px;
+  display: flex;
+}
+.yazi h5 {
+  font-family: "Monoton", sans-serif;
+  margin-top: 23%;
+  margin-bottom: -100px;
+  display: flex;
+}
+.header .nav {
+  margin-left: -27px;
+  margin-top: -17px;
+}
+.header a {
+  text-decoration: none;
+  background: linear-gradient(
+    to right in oklch,
+    rgb(176, 190, 242),
+    rgb(211, 220, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-size: 50px;
+  margin-left: 20px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-style: bold;
+  z-index: 1;
+  margin-top: 20px;
+  transition: 0.7s;
+  white-space: nowrap;
+}
+.nav {
+  display: flex;
+  transition: 0.7s;
+}
+.nav a {
+  font-size: 18px;
+  transition: 0.7s;
+  font-family: "Orbitron", sans-serif;
+}
+.nav a:hover {
+  font-size: 20px;
+  transition: 0.7s;
+}
+.nav li {
+  display: inline-block;
+  margin: 10px;
+  margin-top: 35px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 20px;
+}
+.bgicons {
+  font-size: 60px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.bgicons span {
+  color: #1a005b;
+  opacity: 1;
+  position: absolute;
+  transition: 0.8s;
+  z-index: 1;
+}
+.bgicons2 {
+  font-size: 60px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.bgicons2 span {
+  color: #070019;
+  opacity: 1;
+  position: absolute;
+  transition: 0.8s;
+}
+#html1 {
+  top: 38%;
+  left: 2%;
+  transform: rotate(20deg);
+  font-size: 70px;
+}
+.code1 {
+  top: 72%;
+  left: 51%;
+  transform: rotate(10deg);
+}
+.code2 {
+  top: 40%;
+  left: 10%;
+  transform: rotate(40deg);
+}
+.lcode1 {
+  top: 7%;
+  left: 80%;
+  transform: rotate(-20deg);
+}
+.lcode2 {
+  top: 80%;
+  left: 10%;
+  transform: rotate(80de  g);
+}
+.fcode1 {
+  top: 20%;
+  left: 1%;
+  transform: rotate(-40deg);
+}
+.fcode2 {
+  top: 45%;
+  left:80%;
+  transform: rotate(40deg);
+}
+.css1 {
+  top: 65%;
+  left: 80%;
+  transform: rotate(-10deg);
+}
+.css2 {
+  top: 5%;
+  left: 10%;
+  transform: rotate(65deg);
+}
+.condev1 {
+  top: 10%;
+  left: 40%;
+  transform: rotate(-54deg);
+}
+.condev2 {
+  top: 30%;
+  left: 27%;
+  transform: rotate(30deg);
+}
+.node1 {
+  top: 60%;
+  left: 20%;
+  transform: rotate(20deg);
+}
+.node2 {
+  top: 79%;
+  left: 81%;
+  transform: rotate(67deg);
+}
+.js1 {
+  top: 30%;
+  left: 71%;
+  transform: rotate(-90deg);
+}
+.js2 {
+  top: 90%;
+  left: 50%;
+  transform: rotate(-27deg);
+}
+.bug1 {
+  top: 50%;
+  left: 50%;
+  transform: rotate(-30deg);
+}
+.content {
+  width: 100%;
+  background-color: #070019;
+  height: 620px;
+  margin-top: 110px;
+  border-radius: 20px;
+  position: relative;
+  transition: 0.6s;
+}
+.content:hover {
+  transition: 0.6s;
+}
+.content h6 {
+  font-family: "Orbitron", sans-serif;
+  margin-bottom: 10px;
+  margin-top: 85px;
+  transition: 0.6s;
+}
+.content:hover h6 {
+  color: #440000;
+  transition: 0.6s;
+}
+.content #paragraf {
+  margin-top: 0px;
+  margin-left: -10px;
+  font-family: "Google Sans Code", monospace;
+  letter-spacing: -2px;
+}
+.skills {
+  background-color: #0e0030;
+  width: 100%;
+  height: 740px;
+  position: relative;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+.project {
+  background-color: #070019;
+  width: 100%;
+  height: 740px;
+  position: relative;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+#baslik {
+  background: linear-gradient(
+    to right in oklch,
+    rgb(176, 190, 242),
+    rgb(211, 220, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin-top: 20px;
+  margin-bottom: -30px;
+  display: inline-block;
+  font-family: "Orbitron", sans-serif;
+}
+#baslik2 {
+  background: linear-gradient(
+    to right in oklch,
+    rgb(176, 190, 242),
+    rgb(211, 220, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-family: "Orbitron", sans-serif;
+}
+.contact {
+  background-color: #0e0030;
+  width: 100%;
+  height: 740px;
+  position: relative;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+}
+.contact h2{
+  z-index: 2;
+  position: relative;
+}
+#insta {
+  background: rgba(164, 164, 164, 0.5);
+  border-radius: 15px;
+  width: 50px;
+  height: 40px;
+  margin-top: 470px;
+  margin-left: 110px;
+  font-size: 30px;
+  display: flex;
+  position: absolute;
+  transition: 0.6s;
+  z-index: 2;
+}
+#insta:hover {
+  margin-top: 460px;
+  box-shadow: 0 0 10px white;
+}
+#insta a {
+  background: linear-gradient(
+    to right in oklch,
+    rgb(176, 190, 242),
+    rgb(211, 220, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin-left: 6px;
+  margin-top: 5px;
+}
+#lnkd {
+  background: rgba(164, 164, 164, 0.5);
+  border-radius: 15px;
+  width: 50px;
+  height: 40px;
+  margin-top: 470px;
+  font-size: 30px;
+  margin-left: 170px;
+  display: flex;
+  position: absolute;
+  transition: 0.6s;
+  z-index: 2;
+}
+#lnkd:hover {
+  margin-top: 460px;
+  box-shadow: 0 0 10px white;
+}
+#lnkd a {
+  background: linear-gradient(
+    to right in oklch,
+    rgb(176, 190, 242),
+    rgb(211, 220, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin-left: 6px;
+  margin-top: 5px;
+}
+#github {
+  background: rgba(164, 164, 164, 0.5);
+  border-radius: 15px;
+  width: 50px;
+  height: 40px;
+  margin-top: 470px;
+  margin-left: 230px;
+  position: absolute;
+  display: flex;
+  font-size: 30px;
+  transition: 0.6s;
+  z-index: 2;
+}
+#github:hover {
+  margin-top: 460px;
+  box-shadow: 0 0 10px white;
+}
+#github a {
+  background: linear-gradient(
+    to right in oklch,
+    rgb(176, 190, 242),
+    rgb(211, 220, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin-left: 6px;
+  margin-top: 5px;
+}
+#cv {
+  background: rgba(164, 164, 164, 0.5);
+  border-radius: 15px;
+  width: 250px;
+  height: 40px;
+  margin-top: 470px;
+  margin-left: 290px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 30px;
+  transition: 0.6s;
+  z-index: 2;
+}
+#cv:hover {
+  margin-top: 460px;
+  box-shadow: 0 0 10px white;
+}
+#cv a {
+  background: linear-gradient(
+    to right in oklch,
+    rgb(176, 190, 242),
+    rgb(211, 220, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin-left: 10px;
+  margin-top: 3px;
+}
+#cv h6 {
+  margin-left: 30px;
+  margin-top: -28px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+#up {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: rgba(164, 164, 164, 0.5);
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.6s;
+}
+#up:hover {
+  bottom: 40px;
+  box-shadow: 0 0 10px #fff;
+  transition: 0.6s;
+}
+#up a {
+  padding-top: 3px;
+  background: linear-gradient(
+    to right in oklch,
+    rgb(176, 190, 242),
+    rgb(211, 220, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-size: 25px;
+}
+footer {
+  background-color: #070019;
+  text-align: center;
+  padding: 3px;
+  display: block;
+  border-radius: 20px;
+}
+footer p {
+  background: linear-gradient(
+    to right in oklch,
+    rgb(176, 190, 242),
+    rgb(211, 220, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+#skillbar {
+  width: 70%;
+  height: 85%;
+  background: rgba(164, 164, 164, 0.5);
+  margin-left: 220px;
+  border-radius: 10px;
+  padding-top: 1px;
+  transition: 0.6s;
+  position: relative;
+  z-index: 2;
+}
+#skillbar:hover {
+  transition: 0.6s;
+  box-shadow: 0 0 50px white;
+}
+#skillbar h2 {
+  background: linear-gradient(
+    to right in oklch,
+    rgb(176, 190, 242),
+    rgb(211, 220, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+#cbar {
+  box-shadow: 0 0 10px inset white;
+  margin-left: 220px;
+  margin-top: 20px;
+  width: 560px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #0e0030;
+  z-index: 2;
+  position: relative;
+  transition: 0.6s;
+}
+#cbarin {
+  width: 70%;
+  height: 30px;
+  box-shadow: 0 0 10px white;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right in oklch,
+    rgb(176, 190, 242),
+    rgb(211, 220, 255)
+  );
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  transition: 0.6s;
+}
+#sqlbar {
+  box-shadow: 0 0 10px inset white;
+  margin-left: 220px;
+  margin-top: 20px;
+  width: 560px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #0e0030;
+  z-index: 2;
+  position: relative;
+  transition: 0.6s;
+}
+#sqlbarin {
+  width: 75%;
+  height: 30px;
+  box-shadow: 0 0 10px white;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right in oklch,
+    rgb(176, 190, 242),
+    rgb(211, 220, 255)
+  );
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  transition: 0.6s;
+}
+#htmlbar {
+  box-shadow: 0 0 10px inset white;
+  margin-left: 220px;
+  margin-top: 20px;
+  width: 560px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #0e0030;
+  z-index: 2;
+  position: relative;
+  transition: 0.6s;
+}
+#htmlbarin {
+  width: 90%;
+  height: 30px;
+  box-shadow: 0 0 10px white;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right in oklch,
+    rgb(176, 190, 242),
+    rgb(211, 220, 255)
+  );
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  transition: 0.6s;
+}
+#cssbar {
+  box-shadow: 0 0 10px inset white;
+  margin-left: 220px;
+  margin-top: 20px;
+  width: 560px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #0e0030;
+  z-index: 2;
+  position: relative;
+  transition: 0.6s;
+}
+#cssbarin {
+  width: 80%;
+  height: 30px;
+  box-shadow: 0 0 10px white;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right in oklch,
+    rgb(176, 190, 242),
+    rgb(211, 220, 255)
+  );
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  transition: 0.6s;
+}
+#jsbar {
+  box-shadow: 0 0 10px inset white;
+  margin-left: 220px;
+  margin-top: 20px;
+  width: 560px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #0e0030;
+  z-index: 2;
+  position: relative;
+  transition: 0.6s;
+}
+#jsbarin {
+  width: 35%;
+  height: 30px;
+  box-shadow: 0 0 10px white;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right in oklch,
+    rgb(176, 190, 242),
+    rgb(211, 220, 255)
+  );
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  transition: 0.6s;
+}
+#nodebar {
+  box-shadow: 0 0 10px inset white;
+  margin-left: 220px;
+  margin-top: 20px;
+  width: 560px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #0e0030;
+  z-index: 2;
+  position: relative;
+  transition: 0.6s;
+}
+#nodebarin {
+  width: 15%;
+  height: 30px;
+  box-shadow: 0 0 10px white;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right in oklch,
+    rgb(176, 190, 242),
+    rgb(211, 220, 255)
+  );
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  transition: 0.6s;
+}
+#kht {
+  width: 400px;
+  height: 500px;
+  background: rgba(164, 164, 164, 0.5);
+  text-decoration: none;
+  color: white;
+  overflow: hidden;
+  font-size: 15px;
+  display: flex;
+  position: absolute;
+  margin-left: 60px;
+  margin-top: 90px;
+  text-align: center;
+  border-radius: 10px;
+  z-index: 2;
+  transition: 0.6s;
+}
+#kht i {
+  font-size: 150px;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 125px;
+  transition: 0.6s;
+  background: linear-gradient(
+    to right in oklch,
+    rgb(176, 190, 242),
+    rgb(211, 220, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  transition: 0.6s;
+}
+#kht h1 {
+  margin-top: 190px;
+  margin-left: 0px;
+  background: linear-gradient(
+    to right in oklch,
+    rgb(176, 190, 242),
+    rgb(211, 220, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: block;
+  text-align: center;
+  position: absolute;
+  transition: 0.6s;
+  font-family: "Google Sans Code", monospace;
+  letter-spacing: -2px;
+}
+#kht p {
+  margin-top: 290px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  background: linear-gradient(
+    to right in oklch,
+    rgb(176, 190, 242),
+    rgb(211, 220, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-family: "Google Sans Code", monospace;
+  letter-spacing: -3px;
+  position: absolute;
+  display: block;
+  transition: 0.6s;
+}
+#kht:hover {
+  transition: 0.6s;
+  box-shadow: 0 0 40px white;
+  width: 440px;
+  height: 540px;
+  margin-left: 40px;
+  margin-top: 70px;
+}
+#kht:hover h1 {
+  transition: 0.6s;
+  font-size: 35px;
+  margin-left: 0px;
+}
+#kht:hover p {
+  transition: 0.6s;
+  font-size: 21px;
+  margin-top: 290px;
+}
+#kht:hover i {
+  transition: 0.6s;
+  font-size: 170px;
+  margin-left: 130px;
+}
+#qp {
+  width: 400px;
+  height: 500px;
+  background: rgba(164, 164, 164, 0.5);
+  text-decoration: none;
+  color: white;
+  overflow: hidden;
+  font-size: 15px;
+  display: flex;
+  position: absolute;
+  margin-left: 530px;
+  margin-top: 90px;
+  text-align: center;
+  border-radius: 10px;
+  z-index: 2;
+  transition: 0.6s;
+}
+#qp i {
+  font-size: 150px;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 130px;
+  background: linear-gradient(
+    to right in oklch,
+    rgb(176, 190, 242),
+    rgb(211, 220, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  transition: 0.6s;
+}
+#qp h1 {
+  margin-top: 190px;
+  margin-left: 140px;
+  display: block;
+  text-align: center;
+  position: absolute;
+  background: linear-gradient(
+    to right in oklch,
+    rgb(176, 190, 242),
+    rgb(211, 220, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-family: "Google Sans Code", monospace;
+  letter-spacing: -2px;
+  transition: 0.6s;
+}
+#qp p {
+  margin-top: 250px;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: absolute;
+  display: block;
+  background: linear-gradient(
+    to right in oklch,
+    rgb(176, 190, 242),
+    rgb(211, 220, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-family: "Google Sans Code", monospace;
+  letter-spacing: -3px;
+  transition: 0.6s;
+}
+#qp:hover {
+  transition: 0.6s;
+  box-shadow: 0 0 40px white;
+  width: 440px;
+  height: 540px;
+  margin-left: 510px;
+  margin-top: 70px;
+}
+#qp:hover h1 {
+  transition: 0.6s;
+  font-size: 35px;
+  margin-top: 200px;
+  margin-left: 150px;
+}
+#qp:hover p {
+  transition: 0.6s;
+  font-size: 20px;
+  margin-top: 255px;
+}
+#qp:hover i {
+  transition: 0.6s;
+  font-size: 170px;
+  margin-left: 140px;
+}
+#ttp {
+  width: 400px;
+  height: 500px;
+  background: rgba(164, 164, 164, 0.5);
+  text-decoration: none;
+  color: white;
+  overflow: hidden;
+  font-size: 15px;
+  display: flex;
+  position: absolute;
+  margin-left: 1000px;
+  margin-top: 90px;
+  text-align: center;
+  border-radius: 10px;
+  z-index: 2;
+  transition: 0.6s;
+}
+#ttp i {
+  font-size: 150px;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 100px;
+  background: linear-gradient(
+    to right in oklch,
+    rgb(176, 190, 242),
+    rgb(211, 220, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  transition: 0.6s;
+}
+#ttp h1 {
+  margin-top: 190px;
+  margin-left: 110px;
+  display: block;
+  text-align: center;
+  position: absolute;
+  background: linear-gradient(
+    to right in oklch,
+    rgb(176, 190, 242),
+    rgb(211, 220, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: -2px;
+  font-family: "Google Sans Code", monospace;
+  transition: 0.6s;
+}
+#ttp p {
+  margin-top: 250px;
+  font-size: 20px;
+  position: absolute;
+  display: block;
+  background: linear-gradient(
+    to right in oklch,
+    rgb(176, 190, 242),
+    rgb(211, 220, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  padding-left: 20px;
+  padding-right: 20px;
+  letter-spacing: -3px;
+  font-family: "Google Sans Code", monospace;
+  transition: 0.6s;
+}
+#ttp:hover {
+  transition: 0.6s;
+  box-shadow: 0 0 40px white;
+  width: 440px;
+  height: 540px;
+  margin-left: 980px;
+  margin-top: 70px;
+}
+#ttp:hover h1 {
+  transition: 0.6s;
+  font-size: 35px;
+  margin-left: 120px;
+  margin-top: 200px;
+}
+#ttp:hover p {
+  transition: 0.6s;
+  font-size: 20px;
+  margin-top: 255px;
+}
+#ttp:hover i {
+  transition: 0.6s;
+  font-size: 170px;
+  margin-left: 110px;
+}
+#kht #baglanti {
+  position: absolute;
+  font-size: 25px;
+  margin-left: 350px;
+  transition: 0.6s;
+}
+#kht:hover #baglanti {
+  transition: 0.6s;
+  margin-left: 390px;
+  font-size: 27px;
+}
+#qp #baglanti2 {
+  position: absolute;
+  font-size: 25px;
+  margin-left: 350px;
+  transition: 0.6s;
+}
+#qp:hover #baglanti2 {
+  transition: 0.6s;
+  margin-left: 390px;
+  font-size: 27px;
+}
+#ttp #baglanti3 {
+  position: absolute;
+  font-size: 25px;
+  margin-left: 350px;
+  transition: 0.6s;
+}
+#ttp:hover #baglanti3 {
+  transition: 0.6s;
+  margin-left: 390px;
+  font-size: 27px;
+}
+#contactbox {
+  width: 1200px;
+  height: 650px;
+  background: rgba(164, 164, 164, 0.5);
+  border-radius: 10px;
+  margin-left: 130px;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  z-index: 2;
+  transition: 0.6s;
+}
+#contactbox:hover {
+  transition: 0.6s;
+  box-shadow: 0 0 30px white;
+}
+#adsoyad {
+  display: flex;
+  background: rgba(17, 2, 50);
+  color: #fff;
+  width: 500px;
+  height: 40px;
+  border-radius: 10px;
+  margin-left: 350px;
+  margin-top: 80px;
+  padding-left: 10px;
+  z-index: 3;
+  position: relative;
+  font-family: "Google Sans Code", monospace;
+  transition: 0.6s;
+}
+#adsoyad:hover {
+  transition: 0.6s;
+  box-shadow: 0 0 30px white;
+}
+#mail {
+  display: flex;
+  background: rgba(17, 2, 50);
+  color: #fff;
+  width: 500px;
+  height: 40px;
+  border-radius: 10px;
+  margin-left: 350px;
+  margin-top: 40px;
+  padding-left: 10px;
+  z-index: 3;
+  position: relative;
+  transition: 0.6s;
+  font-family: "Google Sans Code", monospace;
+}
+#mail:hover {
+  transition: 0.6s;
+  box-shadow: 0 0 30px white;
+}
+#mesaj {
+  display: flex;
+  background: rgba(17, 2, 50);
+  color: #fff;
+  width: 500px;
+  height: 200px;
+  border-radius: 10px;
+  margin-left: 350px;
+  margin-top: 40px;
+  padding-left: 10px;
+  padding-top: 10px;
+  z-index: 3;
+  position: relative;
+  transition: 0.6s;
+  font-family: "Google Sans Code", monospace;
+}
+#mesaj:hover {
+  transition: 0.6s;
+  box-shadow: 0 0 30px white;
+}
+#gonder {
+  display: inline-block;
+  background: rgba(17, 2, 50);
+  color: #fff;
+  width: 240px;
+  height: 40px;
+  border-radius: 10px;
+  margin-left: 85px;
+  margin-top: 20px;
+  z-index: 3;
+  position: relative;
+  transition: 0.6s;
+  font-family: "Google Sans Code", monospace;
+}
+#gonder:hover {
+  transition: 0.6s;
+  box-shadow: 0 0 30px white;
+}
+#file {
+  display: flex;
+  background: rgba(17, 2, 50);
+  color: #fff;
+  width: 510px;
+  height: 30px;
+  border-radius: 10px;
+  margin-left: 350px;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  z-index: 3;
+  position: relative;
+  font-family: "Google Sans Code", monospace;
+  transition: 0.6s;
+}
+#file:hover {
+  transition: 0.6s;
+  box-shadow: 0 0 30px white;
+}
+#reset {
+  display: flex;
+  background: rgba(17, 2, 50);
+  color: #fff;
+  width: 240px;
+  height: 40px;
+  border-radius: 10px;
+  margin-left: 620px;
+  margin-top: -40px;
+  z-index: 3;
+  position: relative;
+  transition: 0.6s;
+  font-family: "Google Sans Code", monospace;
+}
+#reset:hover {
+  transition: 0.6s;
+  box-shadow: 0 0 30px white;
+}
+#baslik3 {
+  background: linear-gradient(
+    to right in oklch,
+    rgb(176, 190, 242),
+    rgb(211, 220, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-family: "Orbitron", sans-serif;
+}
+@media (max-width: 320px) {
+  .header {
+    position: fixed;
+    width: 22%;
+    margin-left: 20px;
+    height: 30px;
+    margin-bottom: -150px;
+  }
+  .header:hover {
+  margin-left: 15px;
+  width: 23%;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+  .content{
+    margin-top: 70px;
+    width: 100%;
+  }
+  .nav a {
+    margin-left: 0px;
+    font-size: 8px;
+  }
+  .nav li {
+    margin-top: 15px;
+  }
+  .nav a:hover {
+  font-size: 9px;
+  transition: 0.7s;
+}
+  .img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center 4%;
+    margin-left: 80px;
+  }
+  .yazi {
+    font-size: 20px;
+    margin-top: 180px;
+    margin-left: 40px;
+  }
+  .yazi h6 {
+    font-size: 15px;
+    margin-left: 0px;
+    margin-top: 100px;
+  }
+  .yazi p {
+    font-size: 10px;
+    margin-top: 15px;
+    padding-right: 40px;
+  }
+  #insta {
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 40px;
+    margin-top: 450px;
+  }
+  #lnkd {
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 80px;
+    margin-top: 450px;
+  }
+  #github {
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 120px;
+    margin-top: 450px;
+  }
+  #cv {
+    font-size: 15px;
+    width: 90px;
+    padding-left: 3px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 160px;
+    margin-top: 450px;
+  }
+  #skillbar {
+    margin-left: 5px;
+    width: 100%;
+  }
+  #cbar,
+  #sqlbar,
+  #htmlbar,
+  #cssbar,
+  #jsbar,
+  #nodebar {
+    margin-left: 5px;
+    width: 295px;
+  }
+  #cbarin {
+    width: 70%;
+  }
+  #sqlbarin {
+    width: 75%;
+  }
+  #htmlbarin {
+    width: 90%;
+  }
+  #cssbarin{
+    width: 80%;
+  }
+  #jsbarin{
+    width: 35%;
+  }
+  #nodebarin{
+    width: 15%;
+  }
+  .project{
+    width: 100%;
+  }
+  #kht{
+    margin-top: 15px;
+    width: 97%;
+    height: 210px;
+    margin-left: 5px;
+  }
+  #kht #baglanti{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 270px;
+  }
+  #kht i{
+    font-size: 50px;
+    margin-left: 10px;
+    margin-top: 65px;
+  }
+  #kht h1{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+  #kht p{
+    font-size: 13px;
+    margin-top: 70px;
+    margin-left: 60px;
+  }
+  #kht:hover {
+  width: 98%;
+  height: 215px;
+  margin-left: 5px;
+  margin-top: 70px;
+}
+#kht:hover h1 {
+  transition: 0.6s;
+  font-size: 35px;
+  margin-left: 0px;
+}
+#kht:hover p {
+  transition: 0.6s;
+  font-size: 21px;
+  margin-top: 290px;
+}
+#kht:hover i {
+  transition: 0.6s;
+  font-size: 170px;
+  margin-left: 130px;
+}
+  #qp{
+    margin-top: 235px;
+    width: 97%;
+    height: 210px;
+    margin-left: 5px;
+  }
+  #qp #baglanti2{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 270px;
+  }
+  #qp i{
+    font-size: 50px;
+    margin-left: 10px;
+    margin-top: 75px;
+  }
+  #qp h1{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 150px;
+  }
+  #qp p{
+    font-size: 13px;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  #ttp{
+    margin-top: 455px;
+    width: 97%;
+    height: 210px;
+    margin-left: 5px;
+  }
+  #ttp #baglanti3{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 270;
+  }
+  #ttp i{
+    font-size: 50px;
+    margin-left: 10px;
+    margin-top: 75px;
+  }
+  #ttp h1{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 150px;
+  }
+  #ttp p{
+    font-size: 13px;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  #contactbox{
+    width: 100%;
+    height: 620px;
+    margin-left: 0px;
+  }
+  #adsoyad,#mail,#mesaj,#file,#gonder,#reset{
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 80%;
+  }
+  .bgicons{
+    font-size: 45px;
+  }
+  .bgicons2{
+    font-size: 45px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px){
+  .header {
+    position: fixed;
+    width: 90%;
+    margin-left: 20px;
+    height: 30px;
+    margin-bottom: -150px;
+  }
+  .header:hover {
+  margin-left: 15px;
+  width: 77%;
+}
+  .content{
+    margin-left: 0px;
+    margin-top: 70px;
+    width: 100%;
+  }
+  .nav a {
+    margin-left: 2px;
+    font-size: 40%;
+  }
+  .nav li {
+    margin-top: 15px;
+  }
+  .nav a:hover {
+  font-size: 43%;
+  transition: 0.7s;
+}
+  .img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center 4%;
+    margin-left: 20%;
+  }
+  .yazi {
+    font-size: 45%;
+    margin-top: 200px;
+    margin-left: 15%;
+  }
+  .yazi h6 {
+    font-size: 70%;
+    margin-left: 0px;
+    margin-top: 110px;
+  }
+  .yazi p {
+    font-size: 60%;
+    margin-top: 10px;
+    padding-top: -5px;
+    padding-right: 40px;
+  }
+  #insta {
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 15%;
+    margin-top:  160%;
+  }
+  #insta:hover{
+    margin-top: 158%;
+  }
+  #lnkd {
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 27%;
+    margin-top: 160%;
+  }
+   #lnkd:hover{
+    margin-top: 158%;
+  }
+  #github {
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 39%;
+    margin-top: 160%;
+  }
+   #github:hover{
+    margin-top: 158%;
+  }
+  #cv {
+    font-size: 15px;
+    width: 90px;
+    padding-left: 3px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 51%;
+    margin-top: 160%;
+  }
+   #cv:hover{
+    margin-top: 158%;
+  }
+  .skills{
+    width: 100%;
+  }
+  #skillbar {
+    margin-left: 0px;
+    width: 100%;
+  }
+  #cbar,
+  #sqlbar,
+  #htmlbar,
+  #cssbar,
+  #jsbar,
+  #nodebar {
+    margin-left: 5px;
+    width: 97%;
+  }
+  #cbarin {
+    width: 70%;
+  }
+  #sqlbarin {
+    width: 75%;
+  }
+  #htmlbarin {
+    width: 90%;
+  }
+  #cssbarin{
+    width: 80%;
+  }
+  #jsbarin{
+    width: 35%;
+  }
+  #nodebarin{
+    width: 15%;
+  }
+  .project{
+    width: 100%;
+  }
+  #kht{
+    margin-top: 15px;
+    width: 97%;
+    height: 29%;
+    margin-left: 5px;
+  }
+  #kht:hover{
+    margin-top: 15px;
+    width: 98%;
+    height: 30%;
+    margin-left: 5px;
+  }
+  #kht #baglanti{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 95%;
+  }
+  #kht i{
+    font-size: 50px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #kht:hover i{
+    font-size: 52px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #kht h1{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 20%;
+  }
+  #kht:hover h1{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20%;
+  }
+  #kht p{
+    font-size: 13px;
+    margin-top: 70px;
+    margin-left: 60px;
+  }
+  #kht:hover p{
+    font-size: 14px;
+    margin-top: 70px;
+    margin-left: 60px;
+  }
+  #qp{
+    margin-top: 235px;
+    width: 97%;
+    height: 29%;
+    margin-left: 5px;
+  }
+    #qp:hover{
+    margin-top: 235px;
+    width: 98%;
+    height: 30%;
+    margin-left: 5px;
+  }
+  #qp #baglanti2{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 95%;
+  }
+  #qp i{
+    font-size: 50px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #qp:hover i{
+    font-size: 52px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #qp h1{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 50%;
+  }
+  #qp:hover h1{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 50%;
+  }
+  #qp p{
+    font-size: 13px;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  #qp:hover p{
+    font-size: 14px;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  #ttp{
+    margin-top: 455px;
+    width: 97%;
+    height: 29%;
+    margin-left: 5px;
+  }
+    #ttp:hover{
+    margin-top: 455px;
+    width: 98%;
+    height: 30%;
+    margin-left: 5px;
+  }
+  #ttp #baglanti3{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 95%;
+  }
+  #ttp i{
+    font-size: 50px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #ttp:hover i{
+    font-size: 52px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #ttp h1{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 50%;
+  }
+  #ttp:hover h1{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 50%;
+  }
+  #ttp p{
+    font-size: 13px;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  #ttp:hover p{
+    font-size: 14px;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  .contact{
+    width: 100%;
+  }
+  #contactbox{
+    width: 100%;
+    height: 620px;
+    margin-left: 0px;
+  }
+  #adsoyad,#mail,#mesaj,#file,#gonder,#reset{
+    margin-top: 30px;
+    margin-left: 7%;
+    width: 95%;
+  }
+  footer{
+    width: 100%;
+    margin-left: 0px;
+  }
+  .bgicons{
+    font-size: 45px;
+  }
+  .bgicons2{
+    font-size: 45px;
+  }
+} /*bitmedi*/
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    .header {
+    position: fixed;
+    width: 90%;
+    margin-left: 20px;
+    height: 30px;
+    margin-bottom: -150px;
+  }
+  .header:hover {
+  margin-left: 15px;
+  width: 92%;
+}
+  .content{
+    margin-left: 0px;
+    margin-top: 70px;
+    width: 100%;
+  }
+  .nav a {
+    margin-left: 5px;
+    font-size: 70%;
+  }
+  .nav li {
+    margin-top: 15px;
+  }
+  .nav a:hover {
+  font-size: 73%;
+  transition: 0.7s;
+}
+  .img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center 4%;
+    margin-left: 30%;
+  }
+  .yazi {
+    font-size: 60%;
+    margin-top: 200px;
+    margin-left: 20%;
+  }
+  .yazi h6 {
+    font-size: 60%;
+    margin-left: 0px;
+    margin-top: 100px;
+  }
+  .yazi p {
+    font-size: 50%;
+    margin-top: 15px;
+    padding-right: 60px;
+  }
+  #insta {
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 20%;
+    margin-top:  120%;
+  }
+  #insta:hover{
+    margin-top: 118%;
+  }
+  #lnkd {
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 30%;
+    margin-top: 120%;
+  }
+   #lnkd:hover{
+    margin-top: 118%;
+  }
+  #github {
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 40%;
+    margin-top: 120%;
+  }
+   #github:hover{
+    margin-top: 118%;
+  }
+  #cv {
+    font-size: 15px;
+    width: 90px;
+    padding-left: 3px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 50%;
+    margin-top: 120%;
+  }
+   #cv:hover{
+    margin-top: 118%;
+  }
+  .skills{
+    width: 100%;
+  }
+  #skillbar {
+    margin-left: 0px;
+    width: 100%;
+  }
+  #cbar,
+  #sqlbar,
+  #htmlbar,
+  #cssbar,
+  #jsbar,
+  #nodebar {
+    margin-left: 5px;
+    width: 97%;
+  }
+  #cbarin {
+    width: 70%;
+  }
+  #sqlbarin {
+    width: 75%;
+  }
+  #htmlbarin {
+    width: 90%;
+  }
+  #cssbarin{
+    width: 80%;
+  }
+  #jsbarin{
+    width: 35%;
+  }
+  #nodebarin{
+    width: 15%;
+  }
+  .project{
+    width: 100%;
+  }
+  #kht{
+    margin-top: 15px;
+    width: 97%;
+    height: 29%;
+    margin-left: 5px;
+  }
+  #kht:hover{
+    margin-top: 15px;
+    width: 98%;
+    height: 30%;
+    margin-left: 5px;
+  }
+  #kht #baglanti{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 95%;
+  }
+  #kht i{
+    font-size: 50px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #kht:hover i{
+    font-size: 52px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #kht h1{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 20%;
+  }
+  #kht:hover h1{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20%;
+  }
+  #kht p{
+    font-size: 13px;
+    margin-top: 70px;
+    margin-left: 60px;
+  }
+  #kht:hover p{
+    font-size: 14px;
+    margin-top: 70px;
+    margin-left: 60px;
+  }
+  #qp{
+    margin-top: 235px;
+    width: 97%;
+    height: 29%;
+    margin-left: 5px;
+  }
+    #qp:hover{
+    margin-top: 235px;
+    width: 98%;
+    height: 30%;
+    margin-left: 5px;
+  }
+  #qp #baglanti2{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 95%;
+  }
+  #qp i{
+    font-size: 50px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #qp:hover i{
+    font-size: 52px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #qp h1{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 50%;
+  }
+  #qp:hover h1{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 50%;
+  }
+  #qp p{
+    font-size: 13px;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  #qp:hover p{
+    font-size: 14px;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  #ttp{
+    margin-top: 455px;
+    width: 97%;
+    height: 29%;
+    margin-left: 5px;
+  }
+    #ttp:hover{
+    margin-top: 455px;
+    width: 98%;
+    height: 30%;
+    margin-left: 5px;
+  }
+  #ttp #baglanti3{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 95%;
+  }
+  #ttp i{
+    font-size: 50px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #ttp:hover i{
+    font-size: 52px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #ttp h1{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 50%;
+  }
+  #ttp:hover h1{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 50%;
+  }
+  #ttp p{
+    font-size: 13px;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  #ttp:hover p{
+    font-size: 14px;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  .contact{
+    width: 100%;
+  }
+  #contactbox{
+    width: 100%;
+    height: 620px;
+    margin-left: 0px;
+  }
+  #adsoyad,#mail,#mesaj,#file,#gonder,#reset{
+    margin-top: 30px;
+    margin-left: 35%;
+    width: 95%;
+  }
+  footer{
+    width: 100%;
+    margin-left: 0px;
+  }
+  .bgicons{
+    font-size: 45px;
+  }
+  .bgicons2{
+    font-size: 45px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    position: fixed;
+    width: 90%;
+    margin-left: 20px;
+    height: 30px;
+    margin-bottom: -150px;
+  }
+  .header:hover {
+  margin-left: 15px;
+  width: 92%;
+}
+  .content{
+    margin-left: 0px;
+    margin-top: 70px;
+    width: 100%;
+  }
+  .nav a {
+    margin-left: 5px;
+    font-size: 70%;
+  }
+  .nav li {
+    margin-top: 15px;
+  }
+  .nav a:hover {
+  font-size: 73%;
+  transition: 0.7s;
+}
+  .img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center 4%;
+    margin-left: 30%;
+  }
+  .yazi {
+    font-size: 60%;
+    margin-top: 200px;
+    margin-left: 20%;
+  }
+  .yazi h6 {
+    font-size: 60%;
+    margin-left: 0px;
+    margin-top: 100px;
+  }
+  .yazi p {
+    font-size: 50%;
+    margin-top: 15px;
+    padding-right: 60px;
+  }
+  #insta {
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 20%;
+    margin-top:  120%;
+  }
+  #insta:hover{
+    margin-top: 118%;
+  }
+  #lnkd {
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 30%;
+    margin-top: 120%;
+  }
+   #lnkd:hover{
+    margin-top: 118%;
+  }
+  #github {
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 40%;
+    margin-top: 120%;
+  }
+   #github:hover{
+    margin-top: 118%;
+  }
+  #cv {
+    font-size: 15px;
+    width: 90px;
+    padding-left: 3px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 50%;
+    margin-top: 120%;
+  }
+   #cv:hover{
+    margin-top: 118%;
+  }
+  .skills{
+    width: 100%;
+  }
+  #skillbar {
+    margin-left: 0px;
+    width: 100%;
+  }
+  #cbar,
+  #sqlbar,
+  #htmlbar,
+  #cssbar,
+  #jsbar,
+  #nodebar {
+    margin-left: 5px;
+    width: 97%;
+  }
+  #cbarin {
+    width: 70%;
+  }
+  #sqlbarin {
+    width: 75%;
+  }
+  #htmlbarin {
+    width: 90%;
+  }
+  #cssbarin{
+    width: 80%;
+  }
+  #jsbarin{
+    width: 35%;
+  }
+  #nodebarin{
+    width: 15%;
+  }
+  .project{
+    width: 100%;
+  }
+  #kht{
+    margin-top: 15px;
+    width: 97%;
+    height: 29%;
+    margin-left: 5px;
+  }
+  #kht:hover{
+    margin-top: 15px;
+    width: 98%;
+    height: 30%;
+    margin-left: 5px;
+  }
+  #kht #baglanti{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 95%;
+  }
+  #kht i{
+    font-size: 50px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #kht:hover i{
+    font-size: 52px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #kht h1{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 20%;
+  }
+  #kht:hover h1{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20%;
+  }
+  #kht p{
+    font-size: 13px;
+    margin-top: 70px;
+    margin-left: 60px;
+  }
+  #kht:hover p{
+    font-size: 14px;
+    margin-top: 70px;
+    margin-left: 60px;
+  }
+  #qp{
+    margin-top: 235px;
+    width: 97%;
+    height: 29%;
+    margin-left: 5px;
+  }
+    #qp:hover{
+    margin-top: 235px;
+    width: 98%;
+    height: 30%;
+    margin-left: 5px;
+  }
+  #qp #baglanti2{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 95%;
+  }
+  #qp i{
+    font-size: 50px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #qp:hover i{
+    font-size: 52px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #qp h1{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 50%;
+  }
+  #qp:hover h1{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 50%;
+  }
+  #qp p{
+    font-size: 13px;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  #qp:hover p{
+    font-size: 14px;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  #ttp{
+    margin-top: 455px;
+    width: 97%;
+    height: 29%;
+    margin-left: 5px;
+  }
+    #ttp:hover{
+    margin-top: 455px;
+    width: 98%;
+    height: 30%;
+    margin-left: 5px;
+  }
+  #ttp #baglanti3{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 95%;
+  }
+  #ttp i{
+    font-size: 50px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #ttp:hover i{
+    font-size: 52px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #ttp h1{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 50%;
+  }
+  #ttp:hover h1{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 50%;
+  }
+  #ttp p{
+    font-size: 13px;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  #ttp:hover p{
+    font-size: 14px;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  .contact{
+    width: 100%;
+  }
+  #contactbox{
+    width: 100%;
+    height: 620px;
+    margin-left: 0px;
+  }
+  #adsoyad,#mail,#mesaj,#file,#gonder,#reset{
+    margin-top: 30px;
+    margin-left: 35%;
+    width: 95%;
+  }
+  footer{
+    width: 100%;
+    margin-left: 0px;
+  }
+  .bgicons{
+    font-size: 45px;
+  }
+  .bgicons2{
+    font-size: 45px;
+  }
+}
     </style>
+
   </head>
   <body>
     <div class="header" id="header">
-      <!--<a href="#header">Özcan Yorulmaz</a>-->
       <ul class="nav">
         <li>
           <a href="#content"><i class="fa-solid fa-house"></i> Home</a>

@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron:wght@400..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap");
 body {
   background-color: #110232;
+  width: 96%;
 }
 .header {
   background-color: #ffffff;
@@ -18,6 +19,7 @@ body {
   left: 0;
   z-index: 1000;
 }
+
 #content,
 #skills,
 #project,
@@ -52,7 +54,6 @@ body {
   position: relative;
 }
 .yazi {
-  text-align: left;
   background: linear-gradient(
     to right in oklch,
     rgb(176, 190, 242),
@@ -65,7 +66,6 @@ body {
   margin-left: 100px;
   margin-top: 10px;
   overflow: hidden;
-  display: inline-block;
   position: absolute;
   z-index: 3;
 }
@@ -79,7 +79,8 @@ body {
   margin-bottom: 5px;
   display: flex;
 }
-.yazi h3 {
+.yazi h5 {
+  font-family: "Monoton", sans-serif;
   margin-top: 23%;
   margin-bottom: -100px;
   display: flex;
@@ -159,85 +160,85 @@ body {
   position: absolute;
   transition: 0.8s;
 }
-#html1{
-  top: 380px;
-  left: 820px;
+#html1 {
+  top: 38%;
+  left: 2%;
   transform: rotate(20deg);
   font-size: 70px;
 }
 .code1 {
-  top: 440px;
-  left: 510px;
+  top: 72%;
+  left: 51%;
   transform: rotate(10deg);
 }
 .code2 {
-  top: 400px;
-  left: 1000px;
+  top: 40%;
+  left: 10%;
   transform: rotate(40deg);
 }
 .lcode1 {
-  top: 70px;
-  left: 600px;
+  top: 7%;
+  left: 80%;
   transform: rotate(-20deg);
 }
 .lcode2 {
-  top: 500px;
-  left: 800px;
-  transform: rotate(80deg);
+  top: 80%;
+  left: 10%;
+  transform: rotate(80de  g);
 }
 .fcode1 {
-  top: 100px;
-  left: 900px;
+  top: 20%;
+  left: 1%;
   transform: rotate(-40deg);
 }
 .fcode2 {
-  top: 450px;
-  left: 1200px;
-  transform: rotate(90deg);
+  top: 45%;
+  left:80%;
+  transform: rotate(40deg);
 }
 .css1 {
-  top: 250px;
-  left: 200px;
+  top: 65%;
+  left: 80%;
   transform: rotate(-10deg);
 }
 .css2 {
-  top: 50px;
-  left: 100px;
+  top: 5%;
+  left: 10%;
   transform: rotate(65deg);
 }
 .condev1 {
-  top: 100px;
-  left: 400px;
+  top: 10%;
+  left: 40%;
   transform: rotate(-54deg);
 }
 .condev2 {
-  top: 300px;
-  left: 700px;
+  top: 30%;
+  left: 27%;
   transform: rotate(30deg);
 }
 .node1 {
-  top: 500px;
-  left: 100px;
+  top: 60%;
+  left: 20%;
   transform: rotate(20deg);
 }
 .node2 {
-  top: 150px;
-  left: 1100px;
+  top: 79%;
+  left: 81%;
   transform: rotate(67deg);
 }
 .js1 {
-  top: 300px;
-  left: 1300px;
+  top: 30%;
+  left: 71%;
   transform: rotate(-90deg);
 }
 .js2 {
-  top: 50px;
-  left: 1200px;
+  top: 90%;
+  left: 50%;
   transform: rotate(-27deg);
 }
 .bug1 {
-  top: 500px;
-  left: 300px;
+  top: 50%;
+  left: 50%;
   transform: rotate(-30deg);
 }
 .content {
@@ -248,12 +249,6 @@ body {
   border-radius: 20px;
   position: relative;
   transition: 0.6s;
-}
-.content h5 {
-  font-family: "Monoton", sans-serif;
-  margin-bottom: -90px;
-  margin-top: 130px;
-  transition: 1s;
 }
 .content:hover {
   transition: 0.6s;
@@ -328,20 +323,25 @@ body {
   text-align: center;
   color: white;
 }
+.contact h2{
+  z-index: 2;
+  position: relative;
+}
 #insta {
   background: rgba(164, 164, 164, 0.5);
   border-radius: 15px;
   width: 50px;
   height: 40px;
-  margin-top: 430px;
+  margin-top: 470px;
   margin-left: 110px;
   font-size: 30px;
   display: flex;
   position: absolute;
   transition: 0.6s;
+  z-index: 2;
 }
 #insta:hover {
-  margin-top: 420px;
+  margin-top: 460px;
   box-shadow: 0 0 10px white;
 }
 #insta a {
@@ -358,19 +358,20 @@ body {
   margin-top: 5px;
 }
 #lnkd {
-   background: rgba(164, 164, 164, 0.5);
+  background: rgba(164, 164, 164, 0.5);
   border-radius: 15px;
   width: 50px;
   height: 40px;
-  margin-top: 430px;
+  margin-top: 470px;
   font-size: 30px;
   margin-left: 170px;
   display: flex;
   position: absolute;
   transition: 0.6s;
+  z-index: 2;
 }
 #lnkd:hover {
-  margin-top: 420px;
+  margin-top: 460px;
   box-shadow: 0 0 10px white;
 }
 #lnkd a {
@@ -391,15 +392,16 @@ body {
   border-radius: 15px;
   width: 50px;
   height: 40px;
-  margin-top: 430px;
+  margin-top: 470px;
   margin-left: 230px;
   position: absolute;
   display: flex;
   font-size: 30px;
   transition: 0.6s;
+  z-index: 2;
 }
 #github:hover {
-  margin-top: 420px;
+  margin-top: 460px;
   box-shadow: 0 0 10px white;
 }
 #github a {
@@ -420,7 +422,7 @@ body {
   border-radius: 15px;
   width: 250px;
   height: 40px;
-  margin-top: 430px;
+  margin-top: 470px;
   margin-left: 290px;
   position: absolute;
   display: flex;
@@ -428,9 +430,10 @@ body {
   gap: 10px;
   font-size: 30px;
   transition: 0.6s;
+  z-index: 2;
 }
 #cv:hover {
-  margin-top: 420px;
+  margin-top: 460px;
   box-shadow: 0 0 10px white;
 }
 #cv a {
@@ -503,7 +506,7 @@ footer p {
   background-clip: text;
   color: transparent;
 }
-#skillbar{
+#skillbar {
   width: 70%;
   height: 85%;
   background: rgba(164, 164, 164, 0.5);
@@ -514,12 +517,12 @@ footer p {
   position: relative;
   z-index: 2;
 }
-#skillbar:hover{
+#skillbar:hover {
   transition: 0.6s;
   box-shadow: 0 0 50px white;
 }
-#skillbar h2{
-   background: linear-gradient(
+#skillbar h2 {
+  background: linear-gradient(
     to right in oklch,
     rgb(176, 190, 242),
     rgb(211, 220, 255)
@@ -529,7 +532,7 @@ footer p {
   background-clip: text;
   color: transparent;
 }
-#cbar{
+#cbar {
   box-shadow: 0 0 10px inset white;
   margin-left: 220px;
   margin-top: 20px;
@@ -542,7 +545,7 @@ footer p {
   transition: 0.6s;
 }
 #cbarin {
-  width: 350px;
+  width: 70%;
   height: 30px;
   box-shadow: 0 0 10px white;
   border-radius: 10px;
@@ -570,7 +573,7 @@ footer p {
   transition: 0.6s;
 }
 #sqlbarin {
-  width: 390px;
+  width: 75%;
   height: 30px;
   box-shadow: 0 0 10px white;
   border-radius: 10px;
@@ -598,7 +601,7 @@ footer p {
   transition: 0.6s;
 }
 #htmlbarin {
-  width: 490px;
+  width: 90%;
   height: 30px;
   box-shadow: 0 0 10px white;
   border-radius: 10px;
@@ -626,7 +629,7 @@ footer p {
   transition: 0.6s;
 }
 #cssbarin {
-  width: 400px;
+  width: 80%;
   height: 30px;
   box-shadow: 0 0 10px white;
   border-radius: 10px;
@@ -654,7 +657,7 @@ footer p {
   transition: 0.6s;
 }
 #jsbarin {
-  width: 200px;
+  width: 35%;
   height: 30px;
   box-shadow: 0 0 10px white;
   border-radius: 10px;
@@ -682,7 +685,7 @@ footer p {
   transition: 0.6s;
 }
 #nodebarin {
-  width: 100px;
+  width: 15%;
   height: 30px;
   box-shadow: 0 0 10px white;
   border-radius: 10px;
@@ -1149,7 +1152,7 @@ footer p {
   transition: 0.6s;
   box-shadow: 0 0 30px white;
 }
-#baslik3{
+#baslik3 {
   background: linear-gradient(
     to right in oklch,
     rgb(176, 190, 242),
@@ -1160,4 +1163,1134 @@ footer p {
   background-clip: text;
   color: transparent;
   font-family: "Orbitron", sans-serif;
+}
+@media (max-width: 320px) {
+  .header {
+    position: fixed;
+    width: 22%;
+    margin-left: 20px;
+    height: 30px;
+    margin-bottom: -150px;
+  }
+  .header:hover {
+  margin-left: 15px;
+  width: 23%;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+  .content{
+    margin-top: 70px;
+    width: 100%;
+  }
+  .nav a {
+    margin-left: 0px;
+    font-size: 8px;
+  }
+  .nav li {
+    margin-top: 15px;
+  }
+  .nav a:hover {
+  font-size: 9px;
+  transition: 0.7s;
+}
+  .img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center 4%;
+    margin-left: 80px;
+  }
+  .yazi {
+    font-size: 20px;
+    margin-top: 180px;
+    margin-left: 40px;
+  }
+  .yazi h6 {
+    font-size: 15px;
+    margin-left: 0px;
+    margin-top: 100px;
+  }
+  .yazi p {
+    font-size: 10px;
+    margin-top: 15px;
+    padding-right: 40px;
+  }
+  #insta {
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 40px;
+    margin-top: 450px;
+  }
+  #lnkd {
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 80px;
+    margin-top: 450px;
+  }
+  #github {
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 120px;
+    margin-top: 450px;
+  }
+  #cv {
+    font-size: 15px;
+    width: 90px;
+    padding-left: 3px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 160px;
+    margin-top: 450px;
+  }
+  #skillbar {
+    margin-left: 5px;
+    width: 100%;
+  }
+  #cbar,
+  #sqlbar,
+  #htmlbar,
+  #cssbar,
+  #jsbar,
+  #nodebar {
+    margin-left: 5px;
+    width: 295px;
+  }
+  #cbarin {
+    width: 70%;
+  }
+  #sqlbarin {
+    width: 75%;
+  }
+  #htmlbarin {
+    width: 90%;
+  }
+  #cssbarin{
+    width: 80%;
+  }
+  #jsbarin{
+    width: 35%;
+  }
+  #nodebarin{
+    width: 15%;
+  }
+  .project{
+    width: 100%;
+  }
+  #kht{
+    margin-top: 15px;
+    width: 97%;
+    height: 210px;
+    margin-left: 5px;
+  }
+  #kht #baglanti{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 270px;
+  }
+  #kht i{
+    font-size: 50px;
+    margin-left: 10px;
+    margin-top: 65px;
+  }
+  #kht h1{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+  #kht p{
+    font-size: 13px;
+    margin-top: 70px;
+    margin-left: 60px;
+  }
+  #kht:hover {
+  width: 98%;
+  height: 215px;
+  margin-left: 5px;
+  margin-top: 70px;
+}
+#kht:hover h1 {
+  transition: 0.6s;
+  font-size: 35px;
+  margin-left: 0px;
+}
+#kht:hover p {
+  transition: 0.6s;
+  font-size: 21px;
+  margin-top: 290px;
+}
+#kht:hover i {
+  transition: 0.6s;
+  font-size: 170px;
+  margin-left: 130px;
+}
+  #qp{
+    margin-top: 235px;
+    width: 97%;
+    height: 210px;
+    margin-left: 5px;
+  }
+  #qp #baglanti2{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 270px;
+  }
+  #qp i{
+    font-size: 50px;
+    margin-left: 10px;
+    margin-top: 75px;
+  }
+  #qp h1{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 150px;
+  }
+  #qp p{
+    font-size: 13px;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  #ttp{
+    margin-top: 455px;
+    width: 97%;
+    height: 210px;
+    margin-left: 5px;
+  }
+  #ttp #baglanti3{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 270;
+  }
+  #ttp i{
+    font-size: 50px;
+    margin-left: 10px;
+    margin-top: 75px;
+  }
+  #ttp h1{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 150px;
+  }
+  #ttp p{
+    font-size: 13px;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  #contactbox{
+    width: 100%;
+    height: 620px;
+    margin-left: 0px;
+  }
+  #adsoyad,#mail,#mesaj,#file,#gonder,#reset{
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 80%;
+  }
+  .bgicons{
+    font-size: 45px;
+  }
+  .bgicons2{
+    font-size: 45px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px){
+  .header {
+    position: fixed;
+    width: 90%;
+    margin-left: 20px;
+    height: 30px;
+    margin-bottom: -150px;
+  }
+  .header:hover {
+  margin-left: 15px;
+  width: 77%;
+}
+  .content{
+    margin-left: 0px;
+    margin-top: 70px;
+    width: 100%;
+  }
+  .nav a {
+    margin-left: 2px;
+    font-size: 40%;
+  }
+  .nav li {
+    margin-top: 15px;
+  }
+  .nav a:hover {
+  font-size: 43%;
+  transition: 0.7s;
+}
+  .img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center 4%;
+    margin-left: 20%;
+  }
+  .yazi {
+    font-size: 45%;
+    margin-top: 200px;
+    margin-left: 15%;
+  }
+  .yazi h6 {
+    font-size: 70%;
+    margin-left: 0px;
+    margin-top: 110px;
+  }
+  .yazi p {
+    font-size: 60%;
+    margin-top: 10px;
+    padding-top: -5px;
+    padding-right: 40px;
+  }
+  #insta {
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 15%;
+    margin-top:  160%;
+  }
+  #insta:hover{
+    margin-top: 158%;
+  }
+  #lnkd {
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 27%;
+    margin-top: 160%;
+  }
+   #lnkd:hover{
+    margin-top: 158%;
+  }
+  #github {
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 39%;
+    margin-top: 160%;
+  }
+   #github:hover{
+    margin-top: 158%;
+  }
+  #cv {
+    font-size: 15px;
+    width: 90px;
+    padding-left: 3px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 51%;
+    margin-top: 160%;
+  }
+   #cv:hover{
+    margin-top: 158%;
+  }
+  .skills{
+    width: 100%;
+  }
+  #skillbar {
+    margin-left: 0px;
+    width: 100%;
+  }
+  #cbar,
+  #sqlbar,
+  #htmlbar,
+  #cssbar,
+  #jsbar,
+  #nodebar {
+    margin-left: 5px;
+    width: 97%;
+  }
+  #cbarin {
+    width: 70%;
+  }
+  #sqlbarin {
+    width: 75%;
+  }
+  #htmlbarin {
+    width: 90%;
+  }
+  #cssbarin{
+    width: 80%;
+  }
+  #jsbarin{
+    width: 35%;
+  }
+  #nodebarin{
+    width: 15%;
+  }
+  .project{
+    width: 100%;
+  }
+  #kht{
+    margin-top: 15px;
+    width: 97%;
+    height: 29%;
+    margin-left: 5px;
+  }
+  #kht:hover{
+    margin-top: 15px;
+    width: 98%;
+    height: 30%;
+    margin-left: 5px;
+  }
+  #kht #baglanti{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 95%;
+  }
+  #kht i{
+    font-size: 50px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #kht:hover i{
+    font-size: 52px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #kht h1{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 20%;
+  }
+  #kht:hover h1{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20%;
+  }
+  #kht p{
+    font-size: 13px;
+    margin-top: 70px;
+    margin-left: 60px;
+  }
+  #kht:hover p{
+    font-size: 14px;
+    margin-top: 70px;
+    margin-left: 60px;
+  }
+  #qp{
+    margin-top: 235px;
+    width: 97%;
+    height: 29%;
+    margin-left: 5px;
+  }
+    #qp:hover{
+    margin-top: 235px;
+    width: 98%;
+    height: 30%;
+    margin-left: 5px;
+  }
+  #qp #baglanti2{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 95%;
+  }
+  #qp i{
+    font-size: 50px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #qp:hover i{
+    font-size: 52px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #qp h1{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 50%;
+  }
+  #qp:hover h1{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 50%;
+  }
+  #qp p{
+    font-size: 13px;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  #qp:hover p{
+    font-size: 14px;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  #ttp{
+    margin-top: 455px;
+    width: 97%;
+    height: 29%;
+    margin-left: 5px;
+  }
+    #ttp:hover{
+    margin-top: 455px;
+    width: 98%;
+    height: 30%;
+    margin-left: 5px;
+  }
+  #ttp #baglanti3{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 95%;
+  }
+  #ttp i{
+    font-size: 50px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #ttp:hover i{
+    font-size: 52px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #ttp h1{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 50%;
+  }
+  #ttp:hover h1{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 50%;
+  }
+  #ttp p{
+    font-size: 13px;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  #ttp:hover p{
+    font-size: 14px;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  .contact{
+    width: 100%;
+  }
+  #contactbox{
+    width: 100%;
+    height: 620px;
+    margin-left: 0px;
+  }
+  #adsoyad,#mail,#mesaj,#file,#gonder,#reset{
+    margin-top: 30px;
+    margin-left: 7%;
+    width: 95%;
+  }
+  footer{
+    width: 100%;
+    margin-left: 0px;
+  }
+  .bgicons{
+    font-size: 45px;
+  }
+  .bgicons2{
+    font-size: 45px;
+  }
+} /*bitmedi*/
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    .header {
+    position: fixed;
+    width: 90%;
+    margin-left: 20px;
+    height: 30px;
+    margin-bottom: -150px;
+  }
+  .header:hover {
+  margin-left: 15px;
+  width: 92%;
+}
+  .content{
+    margin-left: 0px;
+    margin-top: 70px;
+    width: 100%;
+  }
+  .nav a {
+    margin-left: 5px;
+    font-size: 70%;
+  }
+  .nav li {
+    margin-top: 15px;
+  }
+  .nav a:hover {
+  font-size: 73%;
+  transition: 0.7s;
+}
+  .img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center 4%;
+    margin-left: 30%;
+  }
+  .yazi {
+    font-size: 60%;
+    margin-top: 200px;
+    margin-left: 20%;
+  }
+  .yazi h6 {
+    font-size: 60%;
+    margin-left: 0px;
+    margin-top: 100px;
+  }
+  .yazi p {
+    font-size: 50%;
+    margin-top: 15px;
+    padding-right: 60px;
+  }
+  #insta {
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 20%;
+    margin-top:  120%;
+  }
+  #insta:hover{
+    margin-top: 118%;
+  }
+  #lnkd {
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 30%;
+    margin-top: 120%;
+  }
+   #lnkd:hover{
+    margin-top: 118%;
+  }
+  #github {
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 40%;
+    margin-top: 120%;
+  }
+   #github:hover{
+    margin-top: 118%;
+  }
+  #cv {
+    font-size: 15px;
+    width: 90px;
+    padding-left: 3px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 50%;
+    margin-top: 120%;
+  }
+   #cv:hover{
+    margin-top: 118%;
+  }
+  .skills{
+    width: 100%;
+  }
+  #skillbar {
+    margin-left: 0px;
+    width: 100%;
+  }
+  #cbar,
+  #sqlbar,
+  #htmlbar,
+  #cssbar,
+  #jsbar,
+  #nodebar {
+    margin-left: 5px;
+    width: 97%;
+  }
+  #cbarin {
+    width: 70%;
+  }
+  #sqlbarin {
+    width: 75%;
+  }
+  #htmlbarin {
+    width: 90%;
+  }
+  #cssbarin{
+    width: 80%;
+  }
+  #jsbarin{
+    width: 35%;
+  }
+  #nodebarin{
+    width: 15%;
+  }
+  .project{
+    width: 100%;
+  }
+  #kht{
+    margin-top: 15px;
+    width: 97%;
+    height: 29%;
+    margin-left: 5px;
+  }
+  #kht:hover{
+    margin-top: 15px;
+    width: 98%;
+    height: 30%;
+    margin-left: 5px;
+  }
+  #kht #baglanti{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 95%;
+  }
+  #kht i{
+    font-size: 50px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #kht:hover i{
+    font-size: 52px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #kht h1{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 20%;
+  }
+  #kht:hover h1{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20%;
+  }
+  #kht p{
+    font-size: 13px;
+    margin-top: 70px;
+    margin-left: 60px;
+  }
+  #kht:hover p{
+    font-size: 14px;
+    margin-top: 70px;
+    margin-left: 60px;
+  }
+  #qp{
+    margin-top: 235px;
+    width: 97%;
+    height: 29%;
+    margin-left: 5px;
+  }
+    #qp:hover{
+    margin-top: 235px;
+    width: 98%;
+    height: 30%;
+    margin-left: 5px;
+  }
+  #qp #baglanti2{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 95%;
+  }
+  #qp i{
+    font-size: 50px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #qp:hover i{
+    font-size: 52px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #qp h1{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 50%;
+  }
+  #qp:hover h1{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 50%;
+  }
+  #qp p{
+    font-size: 13px;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  #qp:hover p{
+    font-size: 14px;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  #ttp{
+    margin-top: 455px;
+    width: 97%;
+    height: 29%;
+    margin-left: 5px;
+  }
+    #ttp:hover{
+    margin-top: 455px;
+    width: 98%;
+    height: 30%;
+    margin-left: 5px;
+  }
+  #ttp #baglanti3{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 95%;
+  }
+  #ttp i{
+    font-size: 50px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #ttp:hover i{
+    font-size: 52px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #ttp h1{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 50%;
+  }
+  #ttp:hover h1{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 50%;
+  }
+  #ttp p{
+    font-size: 13px;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  #ttp:hover p{
+    font-size: 14px;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  .contact{
+    width: 100%;
+  }
+  #contactbox{
+    width: 100%;
+    height: 620px;
+    margin-left: 0px;
+  }
+  #adsoyad,#mail,#mesaj,#file,#gonder,#reset{
+    margin-top: 30px;
+    margin-left: 35%;
+    width: 95%;
+  }
+  footer{
+    width: 100%;
+    margin-left: 0px;
+  }
+  .bgicons{
+    font-size: 45px;
+  }
+  .bgicons2{
+    font-size: 45px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    position: fixed;
+    width: 90%;
+    margin-left: 20px;
+    height: 30px;
+    margin-bottom: -150px;
+  }
+  .header:hover {
+  margin-left: 15px;
+  width: 92%;
+}
+  .content{
+    margin-left: 0px;
+    margin-top: 70px;
+    width: 100%;
+  }
+  .nav a {
+    margin-left: 5px;
+    font-size: 70%;
+  }
+  .nav li {
+    margin-top: 15px;
+  }
+  .nav a:hover {
+  font-size: 73%;
+  transition: 0.7s;
+}
+  .img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center 4%;
+    margin-left: 30%;
+  }
+  .yazi {
+    font-size: 60%;
+    margin-top: 200px;
+    margin-left: 20%;
+  }
+  .yazi h6 {
+    font-size: 60%;
+    margin-left: 0px;
+    margin-top: 100px;
+  }
+  .yazi p {
+    font-size: 50%;
+    margin-top: 15px;
+    padding-right: 60px;
+  }
+  #insta {
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 20%;
+    margin-top:  120%;
+  }
+  #insta:hover{
+    margin-top: 118%;
+  }
+  #lnkd {
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 30%;
+    margin-top: 120%;
+  }
+   #lnkd:hover{
+    margin-top: 118%;
+  }
+  #github {
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 40%;
+    margin-top: 120%;
+  }
+   #github:hover{
+    margin-top: 118%;
+  }
+  #cv {
+    font-size: 15px;
+    width: 90px;
+    padding-left: 3px;
+    height: 30px;
+    padding-top: 3px;
+    margin-left: 50%;
+    margin-top: 120%;
+  }
+   #cv:hover{
+    margin-top: 118%;
+  }
+  .skills{
+    width: 100%;
+  }
+  #skillbar {
+    margin-left: 0px;
+    width: 100%;
+  }
+  #cbar,
+  #sqlbar,
+  #htmlbar,
+  #cssbar,
+  #jsbar,
+  #nodebar {
+    margin-left: 5px;
+    width: 97%;
+  }
+  #cbarin {
+    width: 70%;
+  }
+  #sqlbarin {
+    width: 75%;
+  }
+  #htmlbarin {
+    width: 90%;
+  }
+  #cssbarin{
+    width: 80%;
+  }
+  #jsbarin{
+    width: 35%;
+  }
+  #nodebarin{
+    width: 15%;
+  }
+  .project{
+    width: 100%;
+  }
+  #kht{
+    margin-top: 15px;
+    width: 97%;
+    height: 29%;
+    margin-left: 5px;
+  }
+  #kht:hover{
+    margin-top: 15px;
+    width: 98%;
+    height: 30%;
+    margin-left: 5px;
+  }
+  #kht #baglanti{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 95%;
+  }
+  #kht i{
+    font-size: 50px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #kht:hover i{
+    font-size: 52px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #kht h1{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 20%;
+  }
+  #kht:hover h1{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20%;
+  }
+  #kht p{
+    font-size: 13px;
+    margin-top: 70px;
+    margin-left: 60px;
+  }
+  #kht:hover p{
+    font-size: 14px;
+    margin-top: 70px;
+    margin-left: 60px;
+  }
+  #qp{
+    margin-top: 235px;
+    width: 97%;
+    height: 29%;
+    margin-left: 5px;
+  }
+    #qp:hover{
+    margin-top: 235px;
+    width: 98%;
+    height: 30%;
+    margin-left: 5px;
+  }
+  #qp #baglanti2{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 95%;
+  }
+  #qp i{
+    font-size: 50px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #qp:hover i{
+    font-size: 52px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #qp h1{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 50%;
+  }
+  #qp:hover h1{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 50%;
+  }
+  #qp p{
+    font-size: 13px;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  #qp:hover p{
+    font-size: 14px;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  #ttp{
+    margin-top: 455px;
+    width: 97%;
+    height: 29%;
+    margin-left: 5px;
+  }
+    #ttp:hover{
+    margin-top: 455px;
+    width: 98%;
+    height: 30%;
+    margin-left: 5px;
+  }
+  #ttp #baglanti3{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 95%;
+  }
+  #ttp i{
+    font-size: 50px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #ttp:hover i{
+    font-size: 52px;
+    margin-left: 10px;
+    margin-top: 20%;
+  }
+  #ttp h1{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 50%;
+  }
+  #ttp:hover h1{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 50%;
+  }
+  #ttp p{
+    font-size: 13px;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  #ttp:hover p{
+    font-size: 14px;
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+  .contact{
+    width: 100%;
+  }
+  #contactbox{
+    width: 100%;
+    height: 620px;
+    margin-left: 0px;
+  }
+  #adsoyad,#mail,#mesaj,#file,#gonder,#reset{
+    margin-top: 30px;
+    margin-left: 35%;
+    width: 95%;
+  }
+  footer{
+    width: 100%;
+    margin-left: 0px;
+  }
+  .bgicons{
+    font-size: 45px;
+  }
+  .bgicons2{
+    font-size: 45px;
+  }
 }
